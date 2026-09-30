@@ -1,5 +1,4 @@
-
-
+import numpy as np
 
 def k_nn(x, x_train, class_train, k):
 
@@ -32,10 +31,10 @@ def k_nn(x, x_train, class_train, k):
     # On ne conserve que les k premiers indices qui vont correspondre aux indices des k plus proches voisins
     indices_k_nn = indices_distances[:k]
 
-    # bincount retourne le nombre d'occurences par classe des k plus proches voisins 
+    # bincount retourne le nombre d'occurences par classe des k plus proches voisins
     counts = np.bincount(class_train[indices_k_nn].astype(int))
 
-    # On retrouve la classe majoritaire en récupérant l'indice avec le plus d'occurences (On ajoute 1 car les indices commencent à zéro et les classes à 1)
-    classe_x = np.argmax(counts)+1
+    # On retrouve la classe majoritaire en récupérant l'indice avec le plus d'occurences
+    classe_x = np.argmax(counts)
 
     return classe_x
