@@ -373,15 +373,15 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 <pre class="cython line score-0">&#xA0;<span class="">02</span>: </pre>
 <pre class="cython line score-66" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">03</span>: <span class="k">def</span> <span class="nf">cprimes</span><span class="p">(</span><span class="nb">int</span> <span class="n">kmax</span><span class="p">):</span></pre>
 <pre class='cython code score-66 '>/* Python wrapper */
-static PyObject *__pyx_pw_10example_cy_6primes_1cprimes(PyObject *__pyx_self, 
+static PyObject *__pyx_pw_6primes_1cprimes(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-static PyMethodDef __pyx_mdef_10example_cy_6primes_1cprimes = {"cprimes", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_10example_cy_6primes_1cprimes, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_10example_cy_6primes_1cprimes(PyObject *__pyx_self, 
+static PyMethodDef __pyx_mdef_6primes_1cprimes = {"cprimes", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_6primes_1cprimes, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_6primes_1cprimes(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
@@ -448,11 +448,11 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
       <span class='pyx_c_api'>__Pyx_Arg_XDECREF_FASTCALL</span>(values[__pyx_temp]);
     }
   }
-  <span class='pyx_c_api'>__Pyx_AddTraceback</span>("example_cy.primes.cprimes", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  <span class='pyx_c_api'>__Pyx_AddTraceback</span>("primes.cprimes", __pyx_clineno, __pyx_lineno, __pyx_filename);
   <span class='refnanny'>__Pyx_RefNannyFinishContext</span>();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_10example_cy_6primes_cprimes(__pyx_self, __pyx_v_kmax);
+  __pyx_r = __pyx_pf_6primes_cprimes(__pyx_self, __pyx_v_kmax);
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
   int __pyx_clineno = 0;
@@ -468,7 +468,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_10example_cy_6primes_cprimes(CYTHON_UNUSED PyObject *__pyx_self, int __pyx_v_kmax) {
+static PyObject *__pyx_pf_6primes_cprimes(CYTHON_UNUSED PyObject *__pyx_self, int __pyx_v_kmax) {
   int __pyx_v_n;
   int __pyx_v_k;
   int __pyx_v_i;
@@ -481,7 +481,7 @@ static PyObject *__pyx_pf_10example_cy_6primes_cprimes(CYTHON_UNUSED PyObject *_
   goto __pyx_L0;
   __pyx_L1_error:;
   <span class='pyx_macro_api'>__Pyx_XDECREF</span>(__pyx_t_1);
-  <span class='pyx_c_api'>__Pyx_AddTraceback</span>("example_cy.primes.cprimes", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  <span class='pyx_c_api'>__Pyx_AddTraceback</span>("primes.cprimes", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   <span class='pyx_macro_api'>__Pyx_XDECREF</span>(__pyx_v_result);
@@ -494,7 +494,7 @@ static PyObject *__pyx_pf_10example_cy_6primes_cprimes(CYTHON_UNUSED PyObject *_
   <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_tuple_);
   <span class='refnanny'>__Pyx_GIVEREF</span>(__pyx_tuple_);
 /* … */
-  __pyx_t_2 = <span class='pyx_c_api'>__Pyx_CyFunction_New</span>(&amp;__pyx_mdef_10example_cy_6primes_1cprimes, 0, __pyx_n_s_cprimes, NULL, __pyx_n_s_example_cy_primes, __pyx_d, ((PyObject *)__pyx_codeobj__2));<span class='error_goto'> if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 3, __pyx_L1_error)</span>
+  __pyx_t_2 = <span class='pyx_c_api'>__Pyx_CyFunction_New</span>(&amp;__pyx_mdef_6primes_1cprimes, 0, __pyx_n_s_cprimes, NULL, __pyx_n_s_primes, __pyx_d, ((PyObject *)__pyx_codeobj__2));<span class='error_goto'> if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 3, __pyx_L1_error)</span>
   <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_2);
   if (<span class='py_c_api'>PyDict_SetItem</span>(__pyx_d, __pyx_n_s_cprimes, __pyx_t_2) &lt; 0) <span class='error_goto'>__PYX_ERR(0, 3, __pyx_L1_error)</span>
   <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_2); __pyx_t_2 = 0;
