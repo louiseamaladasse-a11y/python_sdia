@@ -1,4 +1,5 @@
 import numpy as np
+import bottleneck
 
 def k_nn(x, x_train, class_train, k):
 
@@ -26,7 +27,9 @@ def k_nn(x, x_train, class_train, k):
     distances = np.linalg.norm(x_train - x, axis=1)
 
     # On stocke les indices des distances triées dans l'ordre croissant par argsort
-    indices_distances = np.argsort(distances)
+    #indices_distances = np.argsort(distances)
+
+    indices_distances = bottleneck.argpartition(distances, kth=k-1)
 
     # On ne conserve que les k premiers indices qui vont correspondre aux indices des k plus proches voisins
     indices_k_nn = indices_distances[:k]
