@@ -1,93 +1,117 @@
 import numpy as np
-cimport numpy as np
+cimport cython
 import bottleneck
+from libc.math cimport sqrt
 
-def k_nn(x, x_train, class_train, k):
+# STEP-BY-STEP OPTIMIZATION
 
-    # On commence par calculer la norme euclidienne entre le point x et tous les autres points de x_train
+DTYPE = np.float64
+
+
+# Fonction knn telle quelle pour comparer
+def k_nn_v0(x, x_train, class_train, k):
     distances = np.linalg.norm(x_train - x, axis=1)
-
-    # On stocke les indices des distances triées dans l'ordre croissant par argsort
-    #indices_distances = np.argsort(distances)
-
     indices_distances = bottleneck.argpartition(distances, kth=k-1)
-
-    # On ne conserve que les k premiers indices qui vont correspondre aux indices des k plus proches voisins
-    indices_k_nn = indices_distances[:k]
-
-    # bincount retourne le nombre d'occurences par classe des k plus proches voisins
-    counts = np.bincount(class_train[indices_k_nn].astype(int))
-
-    # On retrouve la classe majoritaire en récupérant l'indice avec le plus d'occurences
-    classe_x = np.argmax(counts)
-
-    return classe_x
-
-
-def k_nn_v1(x, x_train, class_train, k):
-    n_samples = x_train.shape[0]
-    n_features = x_train.shape[1]
-
-    # Tableau numpy pour stocker les distances
-    distances = np.zeros(n_samples)
-
-    # Double boucle for
-    for i in range(n_samples):
-        s = 0.0
-        for j in range(n_features):
-            diff = x_train[i, j] - x[j]
-            s += diff * diff
-        distances[i] = np.sqrt(s)
-
-    indices_distances = np.argsort(distances)
     indices_k_nn = indices_distances[:k]
     counts = np.bincount(class_train[indices_k_nn].astype(int))
     return np.argmax(counts)
 
 
-def k_nn_v2(double[:] x, double[:, :] x_train, long[:] class_train, int k):
-    cdef int n_samples = x_train.shape[0]
-    cdef int n_features = x_train.shape[1]
-    cdef int i, j
-    cdef double s, diff
+# Comme conseillé et constaté, la fonction np.linalg.norm consomme beaucoup donc on l'améliore en la découpant en boucle et en ajoutant les types cython, x et x_train restent des objets numpy pour l'instant
+def k_nn_v1(x, x_train, class_train, int k):
+    assert x.dtype == DTYPE
+    assert x_train.dtype == DTYPE
 
-    # Création du tableau numpy et récupération de sa memoryview
-    distances_np = np.zeros(n_samples, dtype=np.float64)
-    cdef double[:] distances = distances_np
+    cdef Py_ssize_t n = x_train.shape[0]
+    cdef Py_ssize_t d = x_train.shape[1]
+    cdef Py_ssize_t i, j
+    cdef double diff, somme
 
-    for i in range(n_samples):
-        s = 0.0
-        for j in range(n_features):
+    distances = np.zeros(n, dtype=DTYPE)
+
+    for i in range(n):
+        somme = 0.0
+        for j in range(d):
             diff = x_train[i, j] - x[j]
-            s += diff * diff
-        distances[i] = s ** 0.5  # sqrt en C
+            somme += diff * diff
+        distances[i] = sqrt(somme)
 
-    indices_distances = np.argsort(distances_np)
+    # Le reste est conservé en numpy
+    indices_distances = bottleneck.argpartition(distances, kth=k-1)
     indices_k_nn = indices_distances[:k]
-    counts = np.bincount(class_train[indices_k_nn])
+    counts = np.bincount(class_train[indices_k_nn].astype(int))
     return np.argmax(counts)
 
+
+# On remplace les tableaux numpy en memoryview pour optimiser
+def k_nn_v2(double[:] x, double[:, :] x_train, class_train, int k):
+    cdef Py_ssize_t n = x_train.shape[0]
+    cdef Py_ssize_t d = x_train.shape[1]
+    cdef Py_ssize_t i, j
+    cdef double diff, somme
+
+    distances = np.zeros(n, dtype=DTYPE)
+    cdef double[:] distances_view = distances   # même mémoire, pas de copie
+
+    for i in range(n):
+        somme = 0.0
+        for j in range(d):
+            diff = x_train[i, j] - x[j]
+            somme += diff * diff
+        distances_view[i] = sqrt(somme)
+
+    # On écrit via la vue, on passe le vrai tableau numpy à bottleneck
+    indices_distances = bottleneck.argpartition(distances, kth=k-1)
+    indices_k_nn = indices_distances[:k]
+    counts = np.bincount(class_train[indices_k_nn].astype(int))
+    return np.argmax(counts)
+
+
+#  Version finale : comme indiqué, on désactive les sécurités par défaut Cython pour gagner du temps :
 @cython.boundscheck(False)
 @cython.wraparound(False)
+def k_nn_v3(double[:] x, double[:, :] x_train, class_train, int k):
+    cdef Py_ssize_t n = x_train.shape[0]
+    cdef Py_ssize_t d = x_train.shape[1]
+    cdef Py_ssize_t i, j
+    cdef double diff, somme
 
-def k_nn_v3(double[:] x, double[:, :] x_train, long[:] class_train, int k):
-    cdef int n_samples = x_train.shape[0]
-    cdef int n_features = x_train.shape[1]
-    cdef int i, j
-    cdef double s, diff
+    distances = np.zeros(n, dtype=DTYPE)
+    cdef double[:] distances_view = distances
 
-    # Création du tableau numpy et récupération de sa memoryview
-    distances_np = np.zeros(n_samples, dtype=np.float64)
-    cdef double[:] distances = distances_np
-
-    for i in range(n_samples):
-        s = 0.0
-        for j in range(n_features):
+    for i in range(n):
+        somme = 0.0
+        for j in range(d):
             diff = x_train[i, j] - x[j]
-            s += diff * diff
-        distances[i] = s ** 0.5  # sqrt en C
+            somme += diff * diff
+        distances_view[i] = sqrt(somme)
 
-    indices_distances = np.argsort(distances_np)
+    indices_distances = bottleneck.argpartition(distances, kth=k-1)
     indices_k_nn = indices_distances[:k]
-    counts = np.bincount(class_train[indices_k_nn])
+    counts = np.bincount(class_train[indices_k_nn].astype(int))
+    return np.argmax(counts)
+
+
+# Comme conseillé dans le tutoriel, on déclare le tableau Numpy comme contingu pour avoir des gains supplémentaires
+@cython.boundscheck(False)
+@cython.wraparound(False)
+def k_nn_v4(double[::1] x, double[:, ::1] x_train, class_train, int k):
+    cdef Py_ssize_t n = x_train.shape[0]
+    cdef Py_ssize_t d = x_train.shape[1]
+    cdef Py_ssize_t i, j
+    cdef double diff, somme
+
+    distances = np.zeros(n, dtype=DTYPE)
+    cdef double[::1] distances_view = distances
+
+    for i in range(n):
+        somme = 0.0
+        for j in range(d):
+            diff = x_train[i, j] - x[j]
+            somme += diff * diff
+        distances_view[i] = sqrt(somme)
+
+    indices_distances = bottleneck.argpartition(distances, kth=k-1)
+    indices_k_nn = indices_distances[:k]
+    counts = np.bincount(class_train[indices_k_nn].astype(int))
     return np.argmax(counts)
