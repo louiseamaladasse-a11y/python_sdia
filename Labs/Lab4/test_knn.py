@@ -1,5 +1,5 @@
 import numpy as np
-from fonctions import k_nn
+from Labs.Lab4.knn import k_nn
 
 
 def test_knn_class_1():
