@@ -402,15 +402,15 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 <pre class="cython line score-0">&#xA0;<span class="">011</span>: <span class="c"># Fonction knn telle quelle pour comparer</span></pre>
 <pre class="cython line score-104" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">012</span>: <span class="k">def</span> <span class="nf">k_nn_v0</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">x_train</span><span class="p">,</span> <span class="n">class_train</span><span class="p">,</span> <span class="n">k</span><span class="p">):</span></pre>
 <pre class='cython code score-104 '>/* Python wrapper */
-static PyObject *__pyx_pw_6knn_cy_1k_nn_v0(PyObject *__pyx_self, 
+static PyObject *__pyx_pw_6knn_cy_6knn_cy_1k_nn_v0(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-static PyMethodDef __pyx_mdef_6knn_cy_1k_nn_v0 = {"k_nn_v0", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_6knn_cy_1k_nn_v0, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_6knn_cy_1k_nn_v0(PyObject *__pyx_self, 
+static PyMethodDef __pyx_mdef_6knn_cy_6knn_cy_1k_nn_v0 = {"k_nn_v0", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_6knn_cy_6knn_cy_1k_nn_v0, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_6knn_cy_6knn_cy_1k_nn_v0(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
@@ -522,11 +522,11 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
       <span class='pyx_c_api'>__Pyx_Arg_XDECREF_FASTCALL</span>(values[__pyx_temp]);
     }
   }
-  <span class='pyx_c_api'>__Pyx_AddTraceback</span>("knn_cy.k_nn_v0", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  <span class='pyx_c_api'>__Pyx_AddTraceback</span>("knn_cy.knn_cy.k_nn_v0", __pyx_clineno, __pyx_lineno, __pyx_filename);
   <span class='refnanny'>__Pyx_RefNannyFinishContext</span>();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_6knn_cy_k_nn_v0(__pyx_self, __pyx_v_x, __pyx_v_x_train, __pyx_v_class_train, __pyx_v_k);
+  __pyx_r = __pyx_pf_6knn_cy_6knn_cy_k_nn_v0(__pyx_self, __pyx_v_x, __pyx_v_x_train, __pyx_v_class_train, __pyx_v_k);
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
   int __pyx_clineno = 0;
@@ -542,7 +542,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_6knn_cy_k_nn_v0(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_x, PyObject *__pyx_v_x_train, PyObject *__pyx_v_class_train, PyObject *__pyx_v_k) {
+static PyObject *__pyx_pf_6knn_cy_6knn_cy_k_nn_v0(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_x, PyObject *__pyx_v_x_train, PyObject *__pyx_v_class_train, PyObject *__pyx_v_k) {
   PyObject *__pyx_v_distances = NULL;
   PyObject *__pyx_v_indices_distances = NULL;
   PyObject *__pyx_v_indices_k_nn = NULL;
@@ -556,7 +556,7 @@ static PyObject *__pyx_pf_6knn_cy_k_nn_v0(CYTHON_UNUSED PyObject *__pyx_self, Py
   <span class='pyx_macro_api'>__Pyx_XDECREF</span>(__pyx_t_3);
   <span class='pyx_macro_api'>__Pyx_XDECREF</span>(__pyx_t_4);
   <span class='pyx_macro_api'>__Pyx_XDECREF</span>(__pyx_t_5);
-  <span class='pyx_c_api'>__Pyx_AddTraceback</span>("knn_cy.k_nn_v0", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  <span class='pyx_c_api'>__Pyx_AddTraceback</span>("knn_cy.knn_cy.k_nn_v0", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   <span class='pyx_macro_api'>__Pyx_XDECREF</span>(__pyx_v_distances);
@@ -572,7 +572,7 @@ static PyObject *__pyx_pf_6knn_cy_k_nn_v0(CYTHON_UNUSED PyObject *__pyx_self, Py
   <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_tuple__20);
   <span class='refnanny'>__Pyx_GIVEREF</span>(__pyx_tuple__20);
 /* … */
-  __pyx_t_4 = <span class='pyx_c_api'>__Pyx_CyFunction_New</span>(&amp;__pyx_mdef_6knn_cy_1k_nn_v0, 0, __pyx_n_s_k_nn_v0, NULL, __pyx_n_s_knn_cy, __pyx_d, ((PyObject *)__pyx_codeobj__21));<span class='error_goto'> if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 12, __pyx_L1_error)</span>
+  __pyx_t_4 = <span class='pyx_c_api'>__Pyx_CyFunction_New</span>(&amp;__pyx_mdef_6knn_cy_6knn_cy_1k_nn_v0, 0, __pyx_n_s_k_nn_v0, NULL, __pyx_n_s_knn_cy_knn_cy, __pyx_d, ((PyObject *)__pyx_codeobj__21));<span class='error_goto'> if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 12, __pyx_L1_error)</span>
   <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_4);
   if (<span class='py_c_api'>PyDict_SetItem</span>(__pyx_d, __pyx_n_s_k_nn_v0, __pyx_t_4) &lt; 0) <span class='error_goto'>__PYX_ERR(0, 12, __pyx_L1_error)</span>
   <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_4); __pyx_t_4 = 0;
@@ -727,15 +727,15 @@ static PyObject *__pyx_pf_6knn_cy_k_nn_v0(CYTHON_UNUSED PyObject *__pyx_self, Py
 <pre class="cython line score-0">&#xA0;<span class="">020</span>: <span class="c"># Comme conseillé et constaté, la fonction np.linalg.norm consomme beaucoup donc on l&#39;améliore en la découpant en boucle et en ajoutant les types cython, x et x_train restent des objets numpy pour l&#39;instant</span></pre>
 <pre class="cython line score-111" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">021</span>: <span class="k">def</span> <span class="nf">k_nn_v1</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">x_train</span><span class="p">,</span> <span class="n">class_train</span><span class="p">,</span> <span class="nb">int</span> <span class="n">k</span><span class="p">):</span></pre>
 <pre class='cython code score-111 '>/* Python wrapper */
-static PyObject *__pyx_pw_6knn_cy_3k_nn_v1(PyObject *__pyx_self, 
+static PyObject *__pyx_pw_6knn_cy_6knn_cy_3k_nn_v1(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-static PyMethodDef __pyx_mdef_6knn_cy_3k_nn_v1 = {"k_nn_v1", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_6knn_cy_3k_nn_v1, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_6knn_cy_3k_nn_v1(PyObject *__pyx_self, 
+static PyMethodDef __pyx_mdef_6knn_cy_6knn_cy_3k_nn_v1 = {"k_nn_v1", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_6knn_cy_6knn_cy_3k_nn_v1, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_6knn_cy_6knn_cy_3k_nn_v1(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
@@ -847,11 +847,11 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
       <span class='pyx_c_api'>__Pyx_Arg_XDECREF_FASTCALL</span>(values[__pyx_temp]);
     }
   }
-  <span class='pyx_c_api'>__Pyx_AddTraceback</span>("knn_cy.k_nn_v1", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  <span class='pyx_c_api'>__Pyx_AddTraceback</span>("knn_cy.knn_cy.k_nn_v1", __pyx_clineno, __pyx_lineno, __pyx_filename);
   <span class='refnanny'>__Pyx_RefNannyFinishContext</span>();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_6knn_cy_2k_nn_v1(__pyx_self, __pyx_v_x, __pyx_v_x_train, __pyx_v_class_train, __pyx_v_k);
+  __pyx_r = __pyx_pf_6knn_cy_6knn_cy_2k_nn_v1(__pyx_self, __pyx_v_x, __pyx_v_x_train, __pyx_v_class_train, __pyx_v_k);
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
   int __pyx_clineno = 0;
@@ -867,7 +867,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_6knn_cy_2k_nn_v1(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_x, PyObject *__pyx_v_x_train, PyObject *__pyx_v_class_train, int __pyx_v_k) {
+static PyObject *__pyx_pf_6knn_cy_6knn_cy_2k_nn_v1(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_x, PyObject *__pyx_v_x_train, PyObject *__pyx_v_class_train, int __pyx_v_k) {
   Py_ssize_t __pyx_v_n;
   Py_ssize_t __pyx_v_d;
   Py_ssize_t __pyx_v_i;
@@ -887,7 +887,7 @@ static PyObject *__pyx_pf_6knn_cy_2k_nn_v1(CYTHON_UNUSED PyObject *__pyx_self, P
   <span class='pyx_macro_api'>__Pyx_XDECREF</span>(__pyx_t_3);
   <span class='pyx_macro_api'>__Pyx_XDECREF</span>(__pyx_t_6);
   <span class='pyx_macro_api'>__Pyx_XDECREF</span>(__pyx_t_13);
-  <span class='pyx_c_api'>__Pyx_AddTraceback</span>("knn_cy.k_nn_v1", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  <span class='pyx_c_api'>__Pyx_AddTraceback</span>("knn_cy.knn_cy.k_nn_v1", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   <span class='pyx_macro_api'>__Pyx_XDECREF</span>(__pyx_v_distances);
@@ -903,7 +903,7 @@ static PyObject *__pyx_pf_6knn_cy_2k_nn_v1(CYTHON_UNUSED PyObject *__pyx_self, P
   <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_tuple__22);
   <span class='refnanny'>__Pyx_GIVEREF</span>(__pyx_tuple__22);
 /* … */
-  __pyx_t_4 = <span class='pyx_c_api'>__Pyx_CyFunction_New</span>(&amp;__pyx_mdef_6knn_cy_3k_nn_v1, 0, __pyx_n_s_k_nn_v1, NULL, __pyx_n_s_knn_cy, __pyx_d, ((PyObject *)__pyx_codeobj__23));<span class='error_goto'> if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 21, __pyx_L1_error)</span>
+  __pyx_t_4 = <span class='pyx_c_api'>__Pyx_CyFunction_New</span>(&amp;__pyx_mdef_6knn_cy_6knn_cy_3k_nn_v1, 0, __pyx_n_s_k_nn_v1, NULL, __pyx_n_s_knn_cy_knn_cy, __pyx_d, ((PyObject *)__pyx_codeobj__23));<span class='error_goto'> if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 21, __pyx_L1_error)</span>
   <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_4);
   if (<span class='py_c_api'>PyDict_SetItem</span>(__pyx_d, __pyx_n_s_k_nn_v1, __pyx_t_4) &lt; 0) <span class='error_goto'>__PYX_ERR(0, 21, __pyx_L1_error)</span>
   <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_4); __pyx_t_4 = 0;
@@ -1169,15 +1169,15 @@ static PyObject *__pyx_pf_6knn_cy_2k_nn_v1(CYTHON_UNUSED PyObject *__pyx_self, P
 <pre class="cython line score-0">&#xA0;<span class="">046</span>: <span class="c"># On remplace les tableaux numpy en memoryview pour optimiser</span></pre>
 <pre class="cython line score-115" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">047</span>: <span class="k">def</span> <span class="nf">k_nn_v2</span><span class="p">(</span><span class="n">double</span><span class="p">[:]</span> <span class="n">x</span><span class="p">,</span> <span class="n">double</span><span class="p">[:,</span> <span class="p">:]</span> <span class="n">x_train</span><span class="p">,</span> <span class="n">class_train</span><span class="p">,</span> <span class="nb">int</span> <span class="n">k</span><span class="p">):</span></pre>
 <pre class='cython code score-115 '>/* Python wrapper */
-static PyObject *__pyx_pw_6knn_cy_5k_nn_v2(PyObject *__pyx_self, 
+static PyObject *__pyx_pw_6knn_cy_6knn_cy_5k_nn_v2(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-static PyMethodDef __pyx_mdef_6knn_cy_5k_nn_v2 = {"k_nn_v2", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_6knn_cy_5k_nn_v2, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_6knn_cy_5k_nn_v2(PyObject *__pyx_self, 
+static PyMethodDef __pyx_mdef_6knn_cy_6knn_cy_5k_nn_v2 = {"k_nn_v2", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_6knn_cy_6knn_cy_5k_nn_v2, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_6knn_cy_6knn_cy_5k_nn_v2(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
@@ -1291,11 +1291,11 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   }
   __PYX_XCLEAR_MEMVIEW(&amp;__pyx_v_x, 1);
   __PYX_XCLEAR_MEMVIEW(&amp;__pyx_v_x_train, 1);
-  <span class='pyx_c_api'>__Pyx_AddTraceback</span>("knn_cy.k_nn_v2", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  <span class='pyx_c_api'>__Pyx_AddTraceback</span>("knn_cy.knn_cy.k_nn_v2", __pyx_clineno, __pyx_lineno, __pyx_filename);
   <span class='refnanny'>__Pyx_RefNannyFinishContext</span>();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_6knn_cy_4k_nn_v2(__pyx_self, __pyx_v_x, __pyx_v_x_train, __pyx_v_class_train, __pyx_v_k);
+  __pyx_r = __pyx_pf_6knn_cy_6knn_cy_4k_nn_v2(__pyx_self, __pyx_v_x, __pyx_v_x_train, __pyx_v_class_train, __pyx_v_k);
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
   int __pyx_clineno = 0;
@@ -1313,7 +1313,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_6knn_cy_4k_nn_v2(CYTHON_UNUSED PyObject *__pyx_self, __Pyx_memviewslice __pyx_v_x, __Pyx_memviewslice __pyx_v_x_train, PyObject *__pyx_v_class_train, int __pyx_v_k) {
+static PyObject *__pyx_pf_6knn_cy_6knn_cy_4k_nn_v2(CYTHON_UNUSED PyObject *__pyx_self, __Pyx_memviewslice __pyx_v_x, __Pyx_memviewslice __pyx_v_x_train, PyObject *__pyx_v_class_train, int __pyx_v_k) {
   Py_ssize_t __pyx_v_n;
   Py_ssize_t __pyx_v_d;
   Py_ssize_t __pyx_v_i;
@@ -1335,7 +1335,7 @@ static PyObject *__pyx_pf_6knn_cy_4k_nn_v2(CYTHON_UNUSED PyObject *__pyx_self, _
   <span class='pyx_macro_api'>__Pyx_XDECREF</span>(__pyx_t_4);
   __PYX_XCLEAR_MEMVIEW(&amp;__pyx_t_5, 1);
   <span class='pyx_macro_api'>__Pyx_XDECREF</span>(__pyx_t_16);
-  <span class='pyx_c_api'>__Pyx_AddTraceback</span>("knn_cy.k_nn_v2", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  <span class='pyx_c_api'>__Pyx_AddTraceback</span>("knn_cy.knn_cy.k_nn_v2", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   <span class='pyx_macro_api'>__Pyx_XDECREF</span>(__pyx_v_distances);
@@ -1352,7 +1352,7 @@ static PyObject *__pyx_pf_6knn_cy_4k_nn_v2(CYTHON_UNUSED PyObject *__pyx_self, _
   <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_tuple__24);
   <span class='refnanny'>__Pyx_GIVEREF</span>(__pyx_tuple__24);
 /* … */
-  __pyx_t_4 = <span class='pyx_c_api'>__Pyx_CyFunction_New</span>(&amp;__pyx_mdef_6knn_cy_5k_nn_v2, 0, __pyx_n_s_k_nn_v2, NULL, __pyx_n_s_knn_cy, __pyx_d, ((PyObject *)__pyx_codeobj__25));<span class='error_goto'> if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 47, __pyx_L1_error)</span>
+  __pyx_t_4 = <span class='pyx_c_api'>__Pyx_CyFunction_New</span>(&amp;__pyx_mdef_6knn_cy_6knn_cy_5k_nn_v2, 0, __pyx_n_s_k_nn_v2, NULL, __pyx_n_s_knn_cy_knn_cy, __pyx_d, ((PyObject *)__pyx_codeobj__25));<span class='error_goto'> if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 47, __pyx_L1_error)</span>
   <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_4);
   if (<span class='py_c_api'>PyDict_SetItem</span>(__pyx_d, __pyx_n_s_k_nn_v2, __pyx_t_4) &lt; 0) <span class='error_goto'>__PYX_ERR(0, 47, __pyx_L1_error)</span>
   <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_4); __pyx_t_4 = 0;
@@ -1577,15 +1577,15 @@ static PyObject *__pyx_pf_6knn_cy_4k_nn_v2(CYTHON_UNUSED PyObject *__pyx_self, _
 <pre class="cython line score-0">&#xA0;<span class="">070</span>: <span class="c">#  Version finale : comme indiqué, on désactive les sécurités par défaut Cython pour gagner du temps :</span></pre>
 <pre class="cython line score-110" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">071</span>: <span class="nd">@cython</span><span class="o">.</span><span class="n">boundscheck</span><span class="p">(</span><span class="bp">False</span><span class="p">)</span></pre>
 <pre class='cython code score-110 '>/* Python wrapper */
-static PyObject *__pyx_pw_6knn_cy_7k_nn_v3(PyObject *__pyx_self, 
+static PyObject *__pyx_pw_6knn_cy_6knn_cy_7k_nn_v3(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-static PyMethodDef __pyx_mdef_6knn_cy_7k_nn_v3 = {"k_nn_v3", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_6knn_cy_7k_nn_v3, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_6knn_cy_7k_nn_v3(PyObject *__pyx_self, 
+static PyMethodDef __pyx_mdef_6knn_cy_6knn_cy_7k_nn_v3 = {"k_nn_v3", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_6knn_cy_6knn_cy_7k_nn_v3, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_6knn_cy_6knn_cy_7k_nn_v3(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
@@ -1699,11 +1699,11 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   }
   __PYX_XCLEAR_MEMVIEW(&amp;__pyx_v_x, 1);
   __PYX_XCLEAR_MEMVIEW(&amp;__pyx_v_x_train, 1);
-  <span class='pyx_c_api'>__Pyx_AddTraceback</span>("knn_cy.k_nn_v3", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  <span class='pyx_c_api'>__Pyx_AddTraceback</span>("knn_cy.knn_cy.k_nn_v3", __pyx_clineno, __pyx_lineno, __pyx_filename);
   <span class='refnanny'>__Pyx_RefNannyFinishContext</span>();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_6knn_cy_6k_nn_v3(__pyx_self, __pyx_v_x, __pyx_v_x_train, __pyx_v_class_train, __pyx_v_k);
+  __pyx_r = __pyx_pf_6knn_cy_6knn_cy_6k_nn_v3(__pyx_self, __pyx_v_x, __pyx_v_x_train, __pyx_v_class_train, __pyx_v_k);
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
   int __pyx_clineno = 0;
@@ -1721,7 +1721,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_6knn_cy_6k_nn_v3(CYTHON_UNUSED PyObject *__pyx_self, __Pyx_memviewslice __pyx_v_x, __Pyx_memviewslice __pyx_v_x_train, PyObject *__pyx_v_class_train, int __pyx_v_k) {
+static PyObject *__pyx_pf_6knn_cy_6knn_cy_6k_nn_v3(CYTHON_UNUSED PyObject *__pyx_self, __Pyx_memviewslice __pyx_v_x, __Pyx_memviewslice __pyx_v_x_train, PyObject *__pyx_v_class_train, int __pyx_v_k) {
   Py_ssize_t __pyx_v_n;
   Py_ssize_t __pyx_v_d;
   Py_ssize_t __pyx_v_i;
@@ -1743,7 +1743,7 @@ static PyObject *__pyx_pf_6knn_cy_6k_nn_v3(CYTHON_UNUSED PyObject *__pyx_self, _
   <span class='pyx_macro_api'>__Pyx_XDECREF</span>(__pyx_t_4);
   __PYX_XCLEAR_MEMVIEW(&amp;__pyx_t_5, 1);
   <span class='pyx_macro_api'>__Pyx_XDECREF</span>(__pyx_t_15);
-  <span class='pyx_c_api'>__Pyx_AddTraceback</span>("knn_cy.k_nn_v3", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  <span class='pyx_c_api'>__Pyx_AddTraceback</span>("knn_cy.knn_cy.k_nn_v3", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   <span class='pyx_macro_api'>__Pyx_XDECREF</span>(__pyx_v_distances);
@@ -1756,7 +1756,7 @@ static PyObject *__pyx_pf_6knn_cy_6k_nn_v3(CYTHON_UNUSED PyObject *__pyx_self, _
   return __pyx_r;
 }
 /* … */
-  __pyx_t_4 = <span class='pyx_c_api'>__Pyx_CyFunction_New</span>(&amp;__pyx_mdef_6knn_cy_7k_nn_v3, 0, __pyx_n_s_k_nn_v3, NULL, __pyx_n_s_knn_cy, __pyx_d, ((PyObject *)__pyx_codeobj__26));<span class='error_goto'> if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 71, __pyx_L1_error)</span>
+  __pyx_t_4 = <span class='pyx_c_api'>__Pyx_CyFunction_New</span>(&amp;__pyx_mdef_6knn_cy_6knn_cy_7k_nn_v3, 0, __pyx_n_s_k_nn_v3, NULL, __pyx_n_s_knn_cy_knn_cy, __pyx_d, ((PyObject *)__pyx_codeobj__26));<span class='error_goto'> if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 71, __pyx_L1_error)</span>
   <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_4);
   if (<span class='py_c_api'>PyDict_SetItem</span>(__pyx_d, __pyx_n_s_k_nn_v3, __pyx_t_4) &lt; 0) <span class='error_goto'>__PYX_ERR(0, 71, __pyx_L1_error)</span>
   <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_4); __pyx_t_4 = 0;
@@ -1952,15 +1952,15 @@ static PyObject *__pyx_pf_6knn_cy_6k_nn_v3(CYTHON_UNUSED PyObject *__pyx_self, _
 <pre class="cython line score-0">&#xA0;<span class="">095</span>: <span class="c"># Comme conseillé dans le tutoriel, on déclare le tableau Numpy comme contingu pour avoir des gains supplémentaires</span></pre>
 <pre class="cython line score-108" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">096</span>: <span class="nd">@cython</span><span class="o">.</span><span class="n">boundscheck</span><span class="p">(</span><span class="bp">False</span><span class="p">)</span></pre>
 <pre class='cython code score-108 '>/* Python wrapper */
-static PyObject *__pyx_pw_6knn_cy_9k_nn_v4(PyObject *__pyx_self, 
+static PyObject *__pyx_pw_6knn_cy_6knn_cy_9k_nn_v4(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-static PyMethodDef __pyx_mdef_6knn_cy_9k_nn_v4 = {"k_nn_v4", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_6knn_cy_9k_nn_v4, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_6knn_cy_9k_nn_v4(PyObject *__pyx_self, 
+static PyMethodDef __pyx_mdef_6knn_cy_6knn_cy_9k_nn_v4 = {"k_nn_v4", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_6knn_cy_6knn_cy_9k_nn_v4, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_6knn_cy_6knn_cy_9k_nn_v4(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
@@ -2074,11 +2074,11 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   }
   __PYX_XCLEAR_MEMVIEW(&amp;__pyx_v_x, 1);
   __PYX_XCLEAR_MEMVIEW(&amp;__pyx_v_x_train, 1);
-  <span class='pyx_c_api'>__Pyx_AddTraceback</span>("knn_cy.k_nn_v4", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  <span class='pyx_c_api'>__Pyx_AddTraceback</span>("knn_cy.knn_cy.k_nn_v4", __pyx_clineno, __pyx_lineno, __pyx_filename);
   <span class='refnanny'>__Pyx_RefNannyFinishContext</span>();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_6knn_cy_8k_nn_v4(__pyx_self, __pyx_v_x, __pyx_v_x_train, __pyx_v_class_train, __pyx_v_k);
+  __pyx_r = __pyx_pf_6knn_cy_6knn_cy_8k_nn_v4(__pyx_self, __pyx_v_x, __pyx_v_x_train, __pyx_v_class_train, __pyx_v_k);
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
   int __pyx_clineno = 0;
@@ -2096,7 +2096,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_6knn_cy_8k_nn_v4(CYTHON_UNUSED PyObject *__pyx_self, __Pyx_memviewslice __pyx_v_x, __Pyx_memviewslice __pyx_v_x_train, PyObject *__pyx_v_class_train, int __pyx_v_k) {
+static PyObject *__pyx_pf_6knn_cy_6knn_cy_8k_nn_v4(CYTHON_UNUSED PyObject *__pyx_self, __Pyx_memviewslice __pyx_v_x, __Pyx_memviewslice __pyx_v_x_train, PyObject *__pyx_v_class_train, int __pyx_v_k) {
   Py_ssize_t __pyx_v_n;
   Py_ssize_t __pyx_v_d;
   Py_ssize_t __pyx_v_i;
@@ -2118,7 +2118,7 @@ static PyObject *__pyx_pf_6knn_cy_8k_nn_v4(CYTHON_UNUSED PyObject *__pyx_self, _
   <span class='pyx_macro_api'>__Pyx_XDECREF</span>(__pyx_t_4);
   __PYX_XCLEAR_MEMVIEW(&amp;__pyx_t_5, 1);
   <span class='pyx_macro_api'>__Pyx_XDECREF</span>(__pyx_t_15);
-  <span class='pyx_c_api'>__Pyx_AddTraceback</span>("knn_cy.k_nn_v4", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  <span class='pyx_c_api'>__Pyx_AddTraceback</span>("knn_cy.knn_cy.k_nn_v4", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   <span class='pyx_macro_api'>__Pyx_XDECREF</span>(__pyx_v_distances);
@@ -2131,7 +2131,7 @@ static PyObject *__pyx_pf_6knn_cy_8k_nn_v4(CYTHON_UNUSED PyObject *__pyx_self, _
   return __pyx_r;
 }
 /* … */
-  __pyx_t_4 = <span class='pyx_c_api'>__Pyx_CyFunction_New</span>(&amp;__pyx_mdef_6knn_cy_9k_nn_v4, 0, __pyx_n_s_k_nn_v4, NULL, __pyx_n_s_knn_cy, __pyx_d, ((PyObject *)__pyx_codeobj__27));<span class='error_goto'> if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 96, __pyx_L1_error)</span>
+  __pyx_t_4 = <span class='pyx_c_api'>__Pyx_CyFunction_New</span>(&amp;__pyx_mdef_6knn_cy_6knn_cy_9k_nn_v4, 0, __pyx_n_s_k_nn_v4, NULL, __pyx_n_s_knn_cy_knn_cy, __pyx_d, ((PyObject *)__pyx_codeobj__27));<span class='error_goto'> if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 96, __pyx_L1_error)</span>
   <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_4);
   if (<span class='py_c_api'>PyDict_SetItem</span>(__pyx_d, __pyx_n_s_k_nn_v4, __pyx_t_4) &lt; 0) <span class='error_goto'>__PYX_ERR(0, 96, __pyx_L1_error)</span>
   <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_4); __pyx_t_4 = 0;

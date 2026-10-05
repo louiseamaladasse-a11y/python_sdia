@@ -4,12 +4,12 @@
 {
     "distutils": {
         "depends": [],
-        "name": "knn_cy",
+        "name": "knn_cy.knn_cy",
         "sources": [
             "knn_cy.pyx"
         ]
     },
-    "module_name": "knn_cy"
+    "module_name": "knn_cy.knn_cy"
 }
 END: Cython Metadata */
 
@@ -1229,8 +1229,8 @@ static CYTHON_INLINE float __PYX_NAN() {
   #endif
 #endif
 
-#define __PYX_HAVE__knn_cy
-#define __PYX_HAVE_API__knn_cy
+#define __PYX_HAVE__knn_cy__knn_cy
+#define __PYX_HAVE_API__knn_cy__knn_cy
 /* Early includes */
 #include <math.h>
 #include "pythread.h"
@@ -2744,7 +2744,7 @@ static PyObject *__pyx_memoryviewslice__get_base(struct __pyx_memoryviewslice_ob
 
 /* Module declarations from "libc.math" */
 
-/* Module declarations from "knn_cy" */
+/* Module declarations from "knn_cy.knn_cy" */
 static PyObject *__pyx_collections_abc_Sequence = 0;
 static PyObject *generic = 0;
 static PyObject *strided = 0;
@@ -2790,11 +2790,11 @@ static PyObject *__pyx_unpickle_Enum__set_state(struct __pyx_MemviewEnum_obj *, 
 /* #### Code section: typeinfo ### */
 static __Pyx_TypeInfo __Pyx_TypeInfo_double = { "double", NULL, sizeof(double), { 0 }, 0, 'R', 0, 0 };
 /* #### Code section: before_global_var ### */
-#define __Pyx_MODULE_NAME "knn_cy"
-extern int __pyx_module_is_main_knn_cy;
-int __pyx_module_is_main_knn_cy = 0;
+#define __Pyx_MODULE_NAME "knn_cy.knn_cy"
+extern int __pyx_module_is_main_knn_cy__knn_cy;
+int __pyx_module_is_main_knn_cy__knn_cy = 0;
 
-/* Implementation of "knn_cy" */
+/* Implementation of "knn_cy.knn_cy" */
 /* #### Code section: global_var ### */
 static PyObject *__pyx_builtin_AssertionError;
 static PyObject *__pyx_builtin_range;
@@ -2867,7 +2867,6 @@ static const char __pyx_k_enable[] = "enable";
 static const char __pyx_k_encode[] = "encode";
 static const char __pyx_k_format[] = "format";
 static const char __pyx_k_import[] = "__import__";
-static const char __pyx_k_knn_cy[] = "knn_cy";
 static const char __pyx_k_linalg[] = "linalg";
 static const char __pyx_k_name_2[] = "__name__";
 static const char __pyx_k_pickle[] = "pickle";
@@ -2917,6 +2916,7 @@ static const char __pyx_k_pyx_checksum[] = "__pyx_checksum";
 static const char __pyx_k_stringsource[] = "<stringsource>";
 static const char __pyx_k_version_info[] = "version_info";
 static const char __pyx_k_class_getitem[] = "__class_getitem__";
+static const char __pyx_k_knn_cy_knn_cy[] = "knn_cy.knn_cy";
 static const char __pyx_k_reduce_cython[] = "__reduce_cython__";
 static const char __pyx_k_AssertionError[] = "AssertionError";
 static const char __pyx_k_distances_view[] = "distances_view";
@@ -3001,11 +3001,11 @@ static void __pyx_memoryviewslice___pyx_pf_15View_dot_MemoryView_16_memoryviewsl
 static PyObject *__pyx_pf___pyx_memoryviewslice___reduce_cython__(CYTHON_UNUSED struct __pyx_memoryviewslice_obj *__pyx_v_self); /* proto */
 static PyObject *__pyx_pf___pyx_memoryviewslice_2__setstate_cython__(CYTHON_UNUSED struct __pyx_memoryviewslice_obj *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v___pyx_state); /* proto */
 static PyObject *__pyx_pf_15View_dot_MemoryView___pyx_unpickle_Enum(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v___pyx_type, long __pyx_v___pyx_checksum, PyObject *__pyx_v___pyx_state); /* proto */
-static PyObject *__pyx_pf_6knn_cy_k_nn_v0(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_x, PyObject *__pyx_v_x_train, PyObject *__pyx_v_class_train, PyObject *__pyx_v_k); /* proto */
-static PyObject *__pyx_pf_6knn_cy_2k_nn_v1(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_x, PyObject *__pyx_v_x_train, PyObject *__pyx_v_class_train, int __pyx_v_k); /* proto */
-static PyObject *__pyx_pf_6knn_cy_4k_nn_v2(CYTHON_UNUSED PyObject *__pyx_self, __Pyx_memviewslice __pyx_v_x, __Pyx_memviewslice __pyx_v_x_train, PyObject *__pyx_v_class_train, int __pyx_v_k); /* proto */
-static PyObject *__pyx_pf_6knn_cy_6k_nn_v3(CYTHON_UNUSED PyObject *__pyx_self, __Pyx_memviewslice __pyx_v_x, __Pyx_memviewslice __pyx_v_x_train, PyObject *__pyx_v_class_train, int __pyx_v_k); /* proto */
-static PyObject *__pyx_pf_6knn_cy_8k_nn_v4(CYTHON_UNUSED PyObject *__pyx_self, __Pyx_memviewslice __pyx_v_x, __Pyx_memviewslice __pyx_v_x_train, PyObject *__pyx_v_class_train, int __pyx_v_k); /* proto */
+static PyObject *__pyx_pf_6knn_cy_6knn_cy_k_nn_v0(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_x, PyObject *__pyx_v_x_train, PyObject *__pyx_v_class_train, PyObject *__pyx_v_k); /* proto */
+static PyObject *__pyx_pf_6knn_cy_6knn_cy_2k_nn_v1(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_x, PyObject *__pyx_v_x_train, PyObject *__pyx_v_class_train, int __pyx_v_k); /* proto */
+static PyObject *__pyx_pf_6knn_cy_6knn_cy_4k_nn_v2(CYTHON_UNUSED PyObject *__pyx_self, __Pyx_memviewslice __pyx_v_x, __Pyx_memviewslice __pyx_v_x_train, PyObject *__pyx_v_class_train, int __pyx_v_k); /* proto */
+static PyObject *__pyx_pf_6knn_cy_6knn_cy_6k_nn_v3(CYTHON_UNUSED PyObject *__pyx_self, __Pyx_memviewslice __pyx_v_x, __Pyx_memviewslice __pyx_v_x_train, PyObject *__pyx_v_class_train, int __pyx_v_k); /* proto */
+static PyObject *__pyx_pf_6knn_cy_6knn_cy_8k_nn_v4(CYTHON_UNUSED PyObject *__pyx_self, __Pyx_memviewslice __pyx_v_x, __Pyx_memviewslice __pyx_v_x_train, PyObject *__pyx_v_class_train, int __pyx_v_k); /* proto */
 static PyObject *__pyx_tp_new_array(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
 static PyObject *__pyx_tp_new_Enum(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
 static PyObject *__pyx_tp_new_memoryview(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
@@ -3154,7 +3154,7 @@ typedef struct {
   PyObject *__pyx_n_s_k_nn_v2;
   PyObject *__pyx_n_s_k_nn_v3;
   PyObject *__pyx_n_s_k_nn_v4;
-  PyObject *__pyx_n_s_knn_cy;
+  PyObject *__pyx_n_s_knn_cy_knn_cy;
   PyObject *__pyx_kp_s_knn_cy_pyx;
   PyObject *__pyx_n_s_kth;
   PyObject *__pyx_n_s_linalg;
@@ -3387,7 +3387,7 @@ static int __pyx_m_clear(PyObject *m) {
   Py_CLEAR(clear_module_state->__pyx_n_s_k_nn_v2);
   Py_CLEAR(clear_module_state->__pyx_n_s_k_nn_v3);
   Py_CLEAR(clear_module_state->__pyx_n_s_k_nn_v4);
-  Py_CLEAR(clear_module_state->__pyx_n_s_knn_cy);
+  Py_CLEAR(clear_module_state->__pyx_n_s_knn_cy_knn_cy);
   Py_CLEAR(clear_module_state->__pyx_kp_s_knn_cy_pyx);
   Py_CLEAR(clear_module_state->__pyx_n_s_kth);
   Py_CLEAR(clear_module_state->__pyx_n_s_linalg);
@@ -3598,7 +3598,7 @@ static int __pyx_m_traverse(PyObject *m, visitproc visit, void *arg) {
   Py_VISIT(traverse_module_state->__pyx_n_s_k_nn_v2);
   Py_VISIT(traverse_module_state->__pyx_n_s_k_nn_v3);
   Py_VISIT(traverse_module_state->__pyx_n_s_k_nn_v4);
-  Py_VISIT(traverse_module_state->__pyx_n_s_knn_cy);
+  Py_VISIT(traverse_module_state->__pyx_n_s_knn_cy_knn_cy);
   Py_VISIT(traverse_module_state->__pyx_kp_s_knn_cy_pyx);
   Py_VISIT(traverse_module_state->__pyx_n_s_kth);
   Py_VISIT(traverse_module_state->__pyx_n_s_linalg);
@@ -3827,7 +3827,7 @@ static int __pyx_m_traverse(PyObject *m, visitproc visit, void *arg) {
 #define __pyx_n_s_k_nn_v2 __pyx_mstate_global->__pyx_n_s_k_nn_v2
 #define __pyx_n_s_k_nn_v3 __pyx_mstate_global->__pyx_n_s_k_nn_v3
 #define __pyx_n_s_k_nn_v4 __pyx_mstate_global->__pyx_n_s_k_nn_v4
-#define __pyx_n_s_knn_cy __pyx_mstate_global->__pyx_n_s_knn_cy
+#define __pyx_n_s_knn_cy_knn_cy __pyx_mstate_global->__pyx_n_s_knn_cy_knn_cy
 #define __pyx_kp_s_knn_cy_pyx __pyx_mstate_global->__pyx_kp_s_knn_cy_pyx
 #define __pyx_n_s_kth __pyx_mstate_global->__pyx_n_s_kth
 #define __pyx_n_s_linalg __pyx_mstate_global->__pyx_n_s_linalg
@@ -17541,7 +17541,7 @@ static PyObject *__pyx_unpickle_Enum__set_state(struct __pyx_MemviewEnum_obj *__
   return __pyx_r;
 }
 
-/* "knn_cy.pyx":12
+/* "knn_cy/knn_cy.pyx":12
  * 
  * # Fonction knn telle quelle pour comparer
  * def k_nn_v0(x, x_train, class_train, k):             # <<<<<<<<<<<<<<
@@ -17550,15 +17550,15 @@ static PyObject *__pyx_unpickle_Enum__set_state(struct __pyx_MemviewEnum_obj *__
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6knn_cy_1k_nn_v0(PyObject *__pyx_self, 
+static PyObject *__pyx_pw_6knn_cy_6knn_cy_1k_nn_v0(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-static PyMethodDef __pyx_mdef_6knn_cy_1k_nn_v0 = {"k_nn_v0", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_6knn_cy_1k_nn_v0, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_6knn_cy_1k_nn_v0(PyObject *__pyx_self, 
+static PyMethodDef __pyx_mdef_6knn_cy_6knn_cy_1k_nn_v0 = {"k_nn_v0", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_6knn_cy_6knn_cy_1k_nn_v0, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_6knn_cy_6knn_cy_1k_nn_v0(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
@@ -17673,11 +17673,11 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
       __Pyx_Arg_XDECREF_FASTCALL(values[__pyx_temp]);
     }
   }
-  __Pyx_AddTraceback("knn_cy.k_nn_v0", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("knn_cy.knn_cy.k_nn_v0", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_6knn_cy_k_nn_v0(__pyx_self, __pyx_v_x, __pyx_v_x_train, __pyx_v_class_train, __pyx_v_k);
+  __pyx_r = __pyx_pf_6knn_cy_6knn_cy_k_nn_v0(__pyx_self, __pyx_v_x, __pyx_v_x_train, __pyx_v_class_train, __pyx_v_k);
 
   /* function exit code */
   {
@@ -17690,7 +17690,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_6knn_cy_k_nn_v0(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_x, PyObject *__pyx_v_x_train, PyObject *__pyx_v_class_train, PyObject *__pyx_v_k) {
+static PyObject *__pyx_pf_6knn_cy_6knn_cy_k_nn_v0(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_x, PyObject *__pyx_v_x_train, PyObject *__pyx_v_class_train, PyObject *__pyx_v_k) {
   PyObject *__pyx_v_distances = NULL;
   PyObject *__pyx_v_indices_distances = NULL;
   PyObject *__pyx_v_indices_k_nn = NULL;
@@ -17708,7 +17708,7 @@ static PyObject *__pyx_pf_6knn_cy_k_nn_v0(CYTHON_UNUSED PyObject *__pyx_self, Py
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("k_nn_v0", 1);
 
-  /* "knn_cy.pyx":13
+  /* "knn_cy/knn_cy.pyx":13
  * # Fonction knn telle quelle pour comparer
  * def k_nn_v0(x, x_train, class_train, k):
  *     distances = np.linalg.norm(x_train - x, axis=1)             # <<<<<<<<<<<<<<
@@ -17741,7 +17741,7 @@ static PyObject *__pyx_pf_6knn_cy_k_nn_v0(CYTHON_UNUSED PyObject *__pyx_self, Py
   __pyx_v_distances = __pyx_t_4;
   __pyx_t_4 = 0;
 
-  /* "knn_cy.pyx":14
+  /* "knn_cy/knn_cy.pyx":14
  * def k_nn_v0(x, x_train, class_train, k):
  *     distances = np.linalg.norm(x_train - x, axis=1)
  *     indices_distances = bottleneck.argpartition(distances, kth=k-1)             # <<<<<<<<<<<<<<
@@ -17772,7 +17772,7 @@ static PyObject *__pyx_pf_6knn_cy_k_nn_v0(CYTHON_UNUSED PyObject *__pyx_self, Py
   __pyx_v_indices_distances = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "knn_cy.pyx":15
+  /* "knn_cy/knn_cy.pyx":15
  *     distances = np.linalg.norm(x_train - x, axis=1)
  *     indices_distances = bottleneck.argpartition(distances, kth=k-1)
  *     indices_k_nn = indices_distances[:k]             # <<<<<<<<<<<<<<
@@ -17784,7 +17784,7 @@ static PyObject *__pyx_pf_6knn_cy_k_nn_v0(CYTHON_UNUSED PyObject *__pyx_self, Py
   __pyx_v_indices_k_nn = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "knn_cy.pyx":16
+  /* "knn_cy/knn_cy.pyx":16
  *     indices_distances = bottleneck.argpartition(distances, kth=k-1)
  *     indices_k_nn = indices_distances[:k]
  *     counts = np.bincount(class_train[indices_k_nn].astype(int))             # <<<<<<<<<<<<<<
@@ -17849,7 +17849,7 @@ static PyObject *__pyx_pf_6knn_cy_k_nn_v0(CYTHON_UNUSED PyObject *__pyx_self, Py
   __pyx_v_counts = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "knn_cy.pyx":17
+  /* "knn_cy/knn_cy.pyx":17
  *     indices_k_nn = indices_distances[:k]
  *     counts = np.bincount(class_train[indices_k_nn].astype(int))
  *     return np.argmax(counts)             # <<<<<<<<<<<<<<
@@ -17888,7 +17888,7 @@ static PyObject *__pyx_pf_6knn_cy_k_nn_v0(CYTHON_UNUSED PyObject *__pyx_self, Py
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "knn_cy.pyx":12
+  /* "knn_cy/knn_cy.pyx":12
  * 
  * # Fonction knn telle quelle pour comparer
  * def k_nn_v0(x, x_train, class_train, k):             # <<<<<<<<<<<<<<
@@ -17903,7 +17903,7 @@ static PyObject *__pyx_pf_6knn_cy_k_nn_v0(CYTHON_UNUSED PyObject *__pyx_self, Py
   __Pyx_XDECREF(__pyx_t_3);
   __Pyx_XDECREF(__pyx_t_4);
   __Pyx_XDECREF(__pyx_t_5);
-  __Pyx_AddTraceback("knn_cy.k_nn_v0", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("knn_cy.knn_cy.k_nn_v0", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_distances);
@@ -17915,7 +17915,7 @@ static PyObject *__pyx_pf_6knn_cy_k_nn_v0(CYTHON_UNUSED PyObject *__pyx_self, Py
   return __pyx_r;
 }
 
-/* "knn_cy.pyx":21
+/* "knn_cy/knn_cy.pyx":21
  * 
  * # Comme conseill et constat, la fonction np.linalg.norm consomme beaucoup donc on l'amliore en la dcoupant en boucle et en ajoutant les types cython, x et x_train restent des objets numpy pour l'instant
  * def k_nn_v1(x, x_train, class_train, int k):             # <<<<<<<<<<<<<<
@@ -17924,15 +17924,15 @@ static PyObject *__pyx_pf_6knn_cy_k_nn_v0(CYTHON_UNUSED PyObject *__pyx_self, Py
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6knn_cy_3k_nn_v1(PyObject *__pyx_self, 
+static PyObject *__pyx_pw_6knn_cy_6knn_cy_3k_nn_v1(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-static PyMethodDef __pyx_mdef_6knn_cy_3k_nn_v1 = {"k_nn_v1", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_6knn_cy_3k_nn_v1, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_6knn_cy_3k_nn_v1(PyObject *__pyx_self, 
+static PyMethodDef __pyx_mdef_6knn_cy_6knn_cy_3k_nn_v1 = {"k_nn_v1", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_6knn_cy_6knn_cy_3k_nn_v1, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_6knn_cy_6knn_cy_3k_nn_v1(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
@@ -18047,11 +18047,11 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
       __Pyx_Arg_XDECREF_FASTCALL(values[__pyx_temp]);
     }
   }
-  __Pyx_AddTraceback("knn_cy.k_nn_v1", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("knn_cy.knn_cy.k_nn_v1", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_6knn_cy_2k_nn_v1(__pyx_self, __pyx_v_x, __pyx_v_x_train, __pyx_v_class_train, __pyx_v_k);
+  __pyx_r = __pyx_pf_6knn_cy_6knn_cy_2k_nn_v1(__pyx_self, __pyx_v_x, __pyx_v_x_train, __pyx_v_class_train, __pyx_v_k);
 
   /* function exit code */
   {
@@ -18064,7 +18064,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_6knn_cy_2k_nn_v1(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_x, PyObject *__pyx_v_x_train, PyObject *__pyx_v_class_train, int __pyx_v_k) {
+static PyObject *__pyx_pf_6knn_cy_6knn_cy_2k_nn_v1(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_x, PyObject *__pyx_v_x_train, PyObject *__pyx_v_class_train, int __pyx_v_k) {
   Py_ssize_t __pyx_v_n;
   Py_ssize_t __pyx_v_d;
   Py_ssize_t __pyx_v_i;
@@ -18096,7 +18096,7 @@ static PyObject *__pyx_pf_6knn_cy_2k_nn_v1(CYTHON_UNUSED PyObject *__pyx_self, P
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("k_nn_v1", 1);
 
-  /* "knn_cy.pyx":22
+  /* "knn_cy/knn_cy.pyx":22
  * # Comme conseill et constat, la fonction np.linalg.norm consomme beaucoup donc on l'amliore en la dcoupant en boucle et en ajoutant les types cython, x et x_train restent des objets numpy pour l'instant
  * def k_nn_v1(x, x_train, class_train, int k):
  *     assert x.dtype == DTYPE             # <<<<<<<<<<<<<<
@@ -18123,7 +18123,7 @@ static PyObject *__pyx_pf_6knn_cy_2k_nn_v1(CYTHON_UNUSED PyObject *__pyx_self, P
   if ((1)); else __PYX_ERR(0, 22, __pyx_L1_error)
   #endif
 
-  /* "knn_cy.pyx":23
+  /* "knn_cy/knn_cy.pyx":23
  * def k_nn_v1(x, x_train, class_train, int k):
  *     assert x.dtype == DTYPE
  *     assert x_train.dtype == DTYPE             # <<<<<<<<<<<<<<
@@ -18150,7 +18150,7 @@ static PyObject *__pyx_pf_6knn_cy_2k_nn_v1(CYTHON_UNUSED PyObject *__pyx_self, P
   if ((1)); else __PYX_ERR(0, 23, __pyx_L1_error)
   #endif
 
-  /* "knn_cy.pyx":25
+  /* "knn_cy/knn_cy.pyx":25
  *     assert x_train.dtype == DTYPE
  * 
  *     cdef Py_ssize_t n = x_train.shape[0]             # <<<<<<<<<<<<<<
@@ -18166,7 +18166,7 @@ static PyObject *__pyx_pf_6knn_cy_2k_nn_v1(CYTHON_UNUSED PyObject *__pyx_self, P
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_v_n = __pyx_t_5;
 
-  /* "knn_cy.pyx":26
+  /* "knn_cy/knn_cy.pyx":26
  * 
  *     cdef Py_ssize_t n = x_train.shape[0]
  *     cdef Py_ssize_t d = x_train.shape[1]             # <<<<<<<<<<<<<<
@@ -18182,7 +18182,7 @@ static PyObject *__pyx_pf_6knn_cy_2k_nn_v1(CYTHON_UNUSED PyObject *__pyx_self, P
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_v_d = __pyx_t_5;
 
-  /* "knn_cy.pyx":30
+  /* "knn_cy/knn_cy.pyx":30
  *     cdef double diff, somme
  * 
  *     distances = np.zeros(n, dtype=DTYPE)             # <<<<<<<<<<<<<<
@@ -18215,7 +18215,7 @@ static PyObject *__pyx_pf_6knn_cy_2k_nn_v1(CYTHON_UNUSED PyObject *__pyx_self, P
   __pyx_v_distances = __pyx_t_6;
   __pyx_t_6 = 0;
 
-  /* "knn_cy.pyx":32
+  /* "knn_cy/knn_cy.pyx":32
  *     distances = np.zeros(n, dtype=DTYPE)
  * 
  *     for i in range(n):             # <<<<<<<<<<<<<<
@@ -18227,7 +18227,7 @@ static PyObject *__pyx_pf_6knn_cy_2k_nn_v1(CYTHON_UNUSED PyObject *__pyx_self, P
   for (__pyx_t_8 = 0; __pyx_t_8 < __pyx_t_7; __pyx_t_8+=1) {
     __pyx_v_i = __pyx_t_8;
 
-    /* "knn_cy.pyx":33
+    /* "knn_cy/knn_cy.pyx":33
  * 
  *     for i in range(n):
  *         somme = 0.0             # <<<<<<<<<<<<<<
@@ -18236,7 +18236,7 @@ static PyObject *__pyx_pf_6knn_cy_2k_nn_v1(CYTHON_UNUSED PyObject *__pyx_self, P
  */
     __pyx_v_somme = 0.0;
 
-    /* "knn_cy.pyx":34
+    /* "knn_cy/knn_cy.pyx":34
  *     for i in range(n):
  *         somme = 0.0
  *         for j in range(d):             # <<<<<<<<<<<<<<
@@ -18248,7 +18248,7 @@ static PyObject *__pyx_pf_6knn_cy_2k_nn_v1(CYTHON_UNUSED PyObject *__pyx_self, P
     for (__pyx_t_11 = 0; __pyx_t_11 < __pyx_t_10; __pyx_t_11+=1) {
       __pyx_v_j = __pyx_t_11;
 
-      /* "knn_cy.pyx":35
+      /* "knn_cy/knn_cy.pyx":35
  *         somme = 0.0
  *         for j in range(d):
  *             diff = x_train[i, j] - x[j]             # <<<<<<<<<<<<<<
@@ -18280,7 +18280,7 @@ static PyObject *__pyx_pf_6knn_cy_2k_nn_v1(CYTHON_UNUSED PyObject *__pyx_self, P
       __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
       __pyx_v_diff = __pyx_t_12;
 
-      /* "knn_cy.pyx":36
+      /* "knn_cy/knn_cy.pyx":36
  *         for j in range(d):
  *             diff = x_train[i, j] - x[j]
  *             somme += diff * diff             # <<<<<<<<<<<<<<
@@ -18290,7 +18290,7 @@ static PyObject *__pyx_pf_6knn_cy_2k_nn_v1(CYTHON_UNUSED PyObject *__pyx_self, P
       __pyx_v_somme = (__pyx_v_somme + (__pyx_v_diff * __pyx_v_diff));
     }
 
-    /* "knn_cy.pyx":37
+    /* "knn_cy/knn_cy.pyx":37
  *             diff = x_train[i, j] - x[j]
  *             somme += diff * diff
  *         distances[i] = sqrt(somme)             # <<<<<<<<<<<<<<
@@ -18303,7 +18303,7 @@ static PyObject *__pyx_pf_6knn_cy_2k_nn_v1(CYTHON_UNUSED PyObject *__pyx_self, P
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
   }
 
-  /* "knn_cy.pyx":40
+  /* "knn_cy/knn_cy.pyx":40
  * 
  *     # Le reste est conserv en numpy
  *     indices_distances = bottleneck.argpartition(distances, kth=k-1)             # <<<<<<<<<<<<<<
@@ -18334,7 +18334,7 @@ static PyObject *__pyx_pf_6knn_cy_2k_nn_v1(CYTHON_UNUSED PyObject *__pyx_self, P
   __pyx_v_indices_distances = __pyx_t_2;
   __pyx_t_2 = 0;
 
-  /* "knn_cy.pyx":41
+  /* "knn_cy/knn_cy.pyx":41
  *     # Le reste est conserv en numpy
  *     indices_distances = bottleneck.argpartition(distances, kth=k-1)
  *     indices_k_nn = indices_distances[:k]             # <<<<<<<<<<<<<<
@@ -18346,7 +18346,7 @@ static PyObject *__pyx_pf_6knn_cy_2k_nn_v1(CYTHON_UNUSED PyObject *__pyx_self, P
   __pyx_v_indices_k_nn = __pyx_t_2;
   __pyx_t_2 = 0;
 
-  /* "knn_cy.pyx":42
+  /* "knn_cy/knn_cy.pyx":42
  *     indices_distances = bottleneck.argpartition(distances, kth=k-1)
  *     indices_k_nn = indices_distances[:k]
  *     counts = np.bincount(class_train[indices_k_nn].astype(int))             # <<<<<<<<<<<<<<
@@ -18411,7 +18411,7 @@ static PyObject *__pyx_pf_6knn_cy_2k_nn_v1(CYTHON_UNUSED PyObject *__pyx_self, P
   __pyx_v_counts = __pyx_t_2;
   __pyx_t_2 = 0;
 
-  /* "knn_cy.pyx":43
+  /* "knn_cy/knn_cy.pyx":43
  *     indices_k_nn = indices_distances[:k]
  *     counts = np.bincount(class_train[indices_k_nn].astype(int))
  *     return np.argmax(counts)             # <<<<<<<<<<<<<<
@@ -18450,7 +18450,7 @@ static PyObject *__pyx_pf_6knn_cy_2k_nn_v1(CYTHON_UNUSED PyObject *__pyx_self, P
   __pyx_t_2 = 0;
   goto __pyx_L0;
 
-  /* "knn_cy.pyx":21
+  /* "knn_cy/knn_cy.pyx":21
  * 
  * # Comme conseill et constat, la fonction np.linalg.norm consomme beaucoup donc on l'amliore en la dcoupant en boucle et en ajoutant les types cython, x et x_train restent des objets numpy pour l'instant
  * def k_nn_v1(x, x_train, class_train, int k):             # <<<<<<<<<<<<<<
@@ -18465,7 +18465,7 @@ static PyObject *__pyx_pf_6knn_cy_2k_nn_v1(CYTHON_UNUSED PyObject *__pyx_self, P
   __Pyx_XDECREF(__pyx_t_3);
   __Pyx_XDECREF(__pyx_t_6);
   __Pyx_XDECREF(__pyx_t_13);
-  __Pyx_AddTraceback("knn_cy.k_nn_v1", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("knn_cy.knn_cy.k_nn_v1", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_distances);
@@ -18477,7 +18477,7 @@ static PyObject *__pyx_pf_6knn_cy_2k_nn_v1(CYTHON_UNUSED PyObject *__pyx_self, P
   return __pyx_r;
 }
 
-/* "knn_cy.pyx":47
+/* "knn_cy/knn_cy.pyx":47
  * 
  * # On remplace les tableaux numpy en memoryview pour optimiser
  * def k_nn_v2(double[:] x, double[:, :] x_train, class_train, int k):             # <<<<<<<<<<<<<<
@@ -18486,15 +18486,15 @@ static PyObject *__pyx_pf_6knn_cy_2k_nn_v1(CYTHON_UNUSED PyObject *__pyx_self, P
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6knn_cy_5k_nn_v2(PyObject *__pyx_self, 
+static PyObject *__pyx_pw_6knn_cy_6knn_cy_5k_nn_v2(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-static PyMethodDef __pyx_mdef_6knn_cy_5k_nn_v2 = {"k_nn_v2", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_6knn_cy_5k_nn_v2, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_6knn_cy_5k_nn_v2(PyObject *__pyx_self, 
+static PyMethodDef __pyx_mdef_6knn_cy_6knn_cy_5k_nn_v2 = {"k_nn_v2", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_6knn_cy_6knn_cy_5k_nn_v2, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_6knn_cy_6knn_cy_5k_nn_v2(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
@@ -18611,11 +18611,11 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   }
   __PYX_XCLEAR_MEMVIEW(&__pyx_v_x, 1);
   __PYX_XCLEAR_MEMVIEW(&__pyx_v_x_train, 1);
-  __Pyx_AddTraceback("knn_cy.k_nn_v2", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("knn_cy.knn_cy.k_nn_v2", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_6knn_cy_4k_nn_v2(__pyx_self, __pyx_v_x, __pyx_v_x_train, __pyx_v_class_train, __pyx_v_k);
+  __pyx_r = __pyx_pf_6knn_cy_6knn_cy_4k_nn_v2(__pyx_self, __pyx_v_x, __pyx_v_x_train, __pyx_v_class_train, __pyx_v_k);
 
   /* function exit code */
   __PYX_XCLEAR_MEMVIEW(&__pyx_v_x, 1);
@@ -18630,7 +18630,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_6knn_cy_4k_nn_v2(CYTHON_UNUSED PyObject *__pyx_self, __Pyx_memviewslice __pyx_v_x, __Pyx_memviewslice __pyx_v_x_train, PyObject *__pyx_v_class_train, int __pyx_v_k) {
+static PyObject *__pyx_pf_6knn_cy_6knn_cy_4k_nn_v2(CYTHON_UNUSED PyObject *__pyx_self, __Pyx_memviewslice __pyx_v_x, __Pyx_memviewslice __pyx_v_x_train, PyObject *__pyx_v_class_train, int __pyx_v_k) {
   Py_ssize_t __pyx_v_n;
   Py_ssize_t __pyx_v_d;
   Py_ssize_t __pyx_v_i;
@@ -18666,7 +18666,7 @@ static PyObject *__pyx_pf_6knn_cy_4k_nn_v2(CYTHON_UNUSED PyObject *__pyx_self, _
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("k_nn_v2", 1);
 
-  /* "knn_cy.pyx":48
+  /* "knn_cy/knn_cy.pyx":48
  * # On remplace les tableaux numpy en memoryview pour optimiser
  * def k_nn_v2(double[:] x, double[:, :] x_train, class_train, int k):
  *     cdef Py_ssize_t n = x_train.shape[0]             # <<<<<<<<<<<<<<
@@ -18675,7 +18675,7 @@ static PyObject *__pyx_pf_6knn_cy_4k_nn_v2(CYTHON_UNUSED PyObject *__pyx_self, _
  */
   __pyx_v_n = (__pyx_v_x_train.shape[0]);
 
-  /* "knn_cy.pyx":49
+  /* "knn_cy/knn_cy.pyx":49
  * def k_nn_v2(double[:] x, double[:, :] x_train, class_train, int k):
  *     cdef Py_ssize_t n = x_train.shape[0]
  *     cdef Py_ssize_t d = x_train.shape[1]             # <<<<<<<<<<<<<<
@@ -18684,7 +18684,7 @@ static PyObject *__pyx_pf_6knn_cy_4k_nn_v2(CYTHON_UNUSED PyObject *__pyx_self, _
  */
   __pyx_v_d = (__pyx_v_x_train.shape[1]);
 
-  /* "knn_cy.pyx":53
+  /* "knn_cy/knn_cy.pyx":53
  *     cdef double diff, somme
  * 
  *     distances = np.zeros(n, dtype=DTYPE)             # <<<<<<<<<<<<<<
@@ -18717,7 +18717,7 @@ static PyObject *__pyx_pf_6knn_cy_4k_nn_v2(CYTHON_UNUSED PyObject *__pyx_self, _
   __pyx_v_distances = __pyx_t_4;
   __pyx_t_4 = 0;
 
-  /* "knn_cy.pyx":54
+  /* "knn_cy/knn_cy.pyx":54
  * 
  *     distances = np.zeros(n, dtype=DTYPE)
  *     cdef double[:] distances_view = distances   # mme mmoire, pas de copie             # <<<<<<<<<<<<<<
@@ -18729,7 +18729,7 @@ static PyObject *__pyx_pf_6knn_cy_4k_nn_v2(CYTHON_UNUSED PyObject *__pyx_self, _
   __pyx_t_5.memview = NULL;
   __pyx_t_5.data = NULL;
 
-  /* "knn_cy.pyx":56
+  /* "knn_cy/knn_cy.pyx":56
  *     cdef double[:] distances_view = distances   # mme mmoire, pas de copie
  * 
  *     for i in range(n):             # <<<<<<<<<<<<<<
@@ -18741,7 +18741,7 @@ static PyObject *__pyx_pf_6knn_cy_4k_nn_v2(CYTHON_UNUSED PyObject *__pyx_self, _
   for (__pyx_t_8 = 0; __pyx_t_8 < __pyx_t_7; __pyx_t_8+=1) {
     __pyx_v_i = __pyx_t_8;
 
-    /* "knn_cy.pyx":57
+    /* "knn_cy/knn_cy.pyx":57
  * 
  *     for i in range(n):
  *         somme = 0.0             # <<<<<<<<<<<<<<
@@ -18750,7 +18750,7 @@ static PyObject *__pyx_pf_6knn_cy_4k_nn_v2(CYTHON_UNUSED PyObject *__pyx_self, _
  */
     __pyx_v_somme = 0.0;
 
-    /* "knn_cy.pyx":58
+    /* "knn_cy/knn_cy.pyx":58
  *     for i in range(n):
  *         somme = 0.0
  *         for j in range(d):             # <<<<<<<<<<<<<<
@@ -18762,7 +18762,7 @@ static PyObject *__pyx_pf_6knn_cy_4k_nn_v2(CYTHON_UNUSED PyObject *__pyx_self, _
     for (__pyx_t_11 = 0; __pyx_t_11 < __pyx_t_10; __pyx_t_11+=1) {
       __pyx_v_j = __pyx_t_11;
 
-      /* "knn_cy.pyx":59
+      /* "knn_cy/knn_cy.pyx":59
  *         somme = 0.0
  *         for j in range(d):
  *             diff = x_train[i, j] - x[j]             # <<<<<<<<<<<<<<
@@ -18796,7 +18796,7 @@ static PyObject *__pyx_pf_6knn_cy_4k_nn_v2(CYTHON_UNUSED PyObject *__pyx_self, _
       }
       __pyx_v_diff = ((*((double *) ( /* dim=1 */ (( /* dim=0 */ (__pyx_v_x_train.data + __pyx_t_12 * __pyx_v_x_train.strides[0]) ) + __pyx_t_13 * __pyx_v_x_train.strides[1]) ))) - (*((double *) ( /* dim=0 */ (__pyx_v_x.data + __pyx_t_15 * __pyx_v_x.strides[0]) ))));
 
-      /* "knn_cy.pyx":60
+      /* "knn_cy/knn_cy.pyx":60
  *         for j in range(d):
  *             diff = x_train[i, j] - x[j]
  *             somme += diff * diff             # <<<<<<<<<<<<<<
@@ -18806,7 +18806,7 @@ static PyObject *__pyx_pf_6knn_cy_4k_nn_v2(CYTHON_UNUSED PyObject *__pyx_self, _
       __pyx_v_somme = (__pyx_v_somme + (__pyx_v_diff * __pyx_v_diff));
     }
 
-    /* "knn_cy.pyx":61
+    /* "knn_cy/knn_cy.pyx":61
  *             diff = x_train[i, j] - x[j]
  *             somme += diff * diff
  *         distances_view[i] = sqrt(somme)             # <<<<<<<<<<<<<<
@@ -18826,7 +18826,7 @@ static PyObject *__pyx_pf_6knn_cy_4k_nn_v2(CYTHON_UNUSED PyObject *__pyx_self, _
     *((double *) ( /* dim=0 */ (__pyx_v_distances_view.data + __pyx_t_15 * __pyx_v_distances_view.strides[0]) )) = sqrt(__pyx_v_somme);
   }
 
-  /* "knn_cy.pyx":64
+  /* "knn_cy/knn_cy.pyx":64
  * 
  *     # On crit via la vue, on passe le vrai tableau numpy  bottleneck
  *     indices_distances = bottleneck.argpartition(distances, kth=k-1)             # <<<<<<<<<<<<<<
@@ -18857,7 +18857,7 @@ static PyObject *__pyx_pf_6knn_cy_4k_nn_v2(CYTHON_UNUSED PyObject *__pyx_self, _
   __pyx_v_indices_distances = __pyx_t_2;
   __pyx_t_2 = 0;
 
-  /* "knn_cy.pyx":65
+  /* "knn_cy/knn_cy.pyx":65
  *     # On crit via la vue, on passe le vrai tableau numpy  bottleneck
  *     indices_distances = bottleneck.argpartition(distances, kth=k-1)
  *     indices_k_nn = indices_distances[:k]             # <<<<<<<<<<<<<<
@@ -18869,7 +18869,7 @@ static PyObject *__pyx_pf_6knn_cy_4k_nn_v2(CYTHON_UNUSED PyObject *__pyx_self, _
   __pyx_v_indices_k_nn = __pyx_t_2;
   __pyx_t_2 = 0;
 
-  /* "knn_cy.pyx":66
+  /* "knn_cy/knn_cy.pyx":66
  *     indices_distances = bottleneck.argpartition(distances, kth=k-1)
  *     indices_k_nn = indices_distances[:k]
  *     counts = np.bincount(class_train[indices_k_nn].astype(int))             # <<<<<<<<<<<<<<
@@ -18934,7 +18934,7 @@ static PyObject *__pyx_pf_6knn_cy_4k_nn_v2(CYTHON_UNUSED PyObject *__pyx_self, _
   __pyx_v_counts = __pyx_t_2;
   __pyx_t_2 = 0;
 
-  /* "knn_cy.pyx":67
+  /* "knn_cy/knn_cy.pyx":67
  *     indices_k_nn = indices_distances[:k]
  *     counts = np.bincount(class_train[indices_k_nn].astype(int))
  *     return np.argmax(counts)             # <<<<<<<<<<<<<<
@@ -18973,7 +18973,7 @@ static PyObject *__pyx_pf_6knn_cy_4k_nn_v2(CYTHON_UNUSED PyObject *__pyx_self, _
   __pyx_t_2 = 0;
   goto __pyx_L0;
 
-  /* "knn_cy.pyx":47
+  /* "knn_cy/knn_cy.pyx":47
  * 
  * # On remplace les tableaux numpy en memoryview pour optimiser
  * def k_nn_v2(double[:] x, double[:, :] x_train, class_train, int k):             # <<<<<<<<<<<<<<
@@ -18989,7 +18989,7 @@ static PyObject *__pyx_pf_6knn_cy_4k_nn_v2(CYTHON_UNUSED PyObject *__pyx_self, _
   __Pyx_XDECREF(__pyx_t_4);
   __PYX_XCLEAR_MEMVIEW(&__pyx_t_5, 1);
   __Pyx_XDECREF(__pyx_t_16);
-  __Pyx_AddTraceback("knn_cy.k_nn_v2", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("knn_cy.knn_cy.k_nn_v2", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_distances);
@@ -19002,7 +19002,7 @@ static PyObject *__pyx_pf_6knn_cy_4k_nn_v2(CYTHON_UNUSED PyObject *__pyx_self, _
   return __pyx_r;
 }
 
-/* "knn_cy.pyx":71
+/* "knn_cy/knn_cy.pyx":71
  * 
  * #  Version finale : comme indiqu, on dsactive les scurits par dfaut Cython pour gagner du temps :
  * @cython.boundscheck(False)             # <<<<<<<<<<<<<<
@@ -19011,15 +19011,15 @@ static PyObject *__pyx_pf_6knn_cy_4k_nn_v2(CYTHON_UNUSED PyObject *__pyx_self, _
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6knn_cy_7k_nn_v3(PyObject *__pyx_self, 
+static PyObject *__pyx_pw_6knn_cy_6knn_cy_7k_nn_v3(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-static PyMethodDef __pyx_mdef_6knn_cy_7k_nn_v3 = {"k_nn_v3", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_6knn_cy_7k_nn_v3, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_6knn_cy_7k_nn_v3(PyObject *__pyx_self, 
+static PyMethodDef __pyx_mdef_6knn_cy_6knn_cy_7k_nn_v3 = {"k_nn_v3", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_6knn_cy_6knn_cy_7k_nn_v3, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_6knn_cy_6knn_cy_7k_nn_v3(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
@@ -19136,11 +19136,11 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   }
   __PYX_XCLEAR_MEMVIEW(&__pyx_v_x, 1);
   __PYX_XCLEAR_MEMVIEW(&__pyx_v_x_train, 1);
-  __Pyx_AddTraceback("knn_cy.k_nn_v3", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("knn_cy.knn_cy.k_nn_v3", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_6knn_cy_6k_nn_v3(__pyx_self, __pyx_v_x, __pyx_v_x_train, __pyx_v_class_train, __pyx_v_k);
+  __pyx_r = __pyx_pf_6knn_cy_6knn_cy_6k_nn_v3(__pyx_self, __pyx_v_x, __pyx_v_x_train, __pyx_v_class_train, __pyx_v_k);
 
   /* function exit code */
   __PYX_XCLEAR_MEMVIEW(&__pyx_v_x, 1);
@@ -19155,7 +19155,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_6knn_cy_6k_nn_v3(CYTHON_UNUSED PyObject *__pyx_self, __Pyx_memviewslice __pyx_v_x, __Pyx_memviewslice __pyx_v_x_train, PyObject *__pyx_v_class_train, int __pyx_v_k) {
+static PyObject *__pyx_pf_6knn_cy_6knn_cy_6k_nn_v3(CYTHON_UNUSED PyObject *__pyx_self, __Pyx_memviewslice __pyx_v_x, __Pyx_memviewslice __pyx_v_x_train, PyObject *__pyx_v_class_train, int __pyx_v_k) {
   Py_ssize_t __pyx_v_n;
   Py_ssize_t __pyx_v_d;
   Py_ssize_t __pyx_v_i;
@@ -19190,7 +19190,7 @@ static PyObject *__pyx_pf_6knn_cy_6k_nn_v3(CYTHON_UNUSED PyObject *__pyx_self, _
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("k_nn_v3", 1);
 
-  /* "knn_cy.pyx":74
+  /* "knn_cy/knn_cy.pyx":74
  * @cython.wraparound(False)
  * def k_nn_v3(double[:] x, double[:, :] x_train, class_train, int k):
  *     cdef Py_ssize_t n = x_train.shape[0]             # <<<<<<<<<<<<<<
@@ -19199,7 +19199,7 @@ static PyObject *__pyx_pf_6knn_cy_6k_nn_v3(CYTHON_UNUSED PyObject *__pyx_self, _
  */
   __pyx_v_n = (__pyx_v_x_train.shape[0]);
 
-  /* "knn_cy.pyx":75
+  /* "knn_cy/knn_cy.pyx":75
  * def k_nn_v3(double[:] x, double[:, :] x_train, class_train, int k):
  *     cdef Py_ssize_t n = x_train.shape[0]
  *     cdef Py_ssize_t d = x_train.shape[1]             # <<<<<<<<<<<<<<
@@ -19208,7 +19208,7 @@ static PyObject *__pyx_pf_6knn_cy_6k_nn_v3(CYTHON_UNUSED PyObject *__pyx_self, _
  */
   __pyx_v_d = (__pyx_v_x_train.shape[1]);
 
-  /* "knn_cy.pyx":79
+  /* "knn_cy/knn_cy.pyx":79
  *     cdef double diff, somme
  * 
  *     distances = np.zeros(n, dtype=DTYPE)             # <<<<<<<<<<<<<<
@@ -19241,7 +19241,7 @@ static PyObject *__pyx_pf_6knn_cy_6k_nn_v3(CYTHON_UNUSED PyObject *__pyx_self, _
   __pyx_v_distances = __pyx_t_4;
   __pyx_t_4 = 0;
 
-  /* "knn_cy.pyx":80
+  /* "knn_cy/knn_cy.pyx":80
  * 
  *     distances = np.zeros(n, dtype=DTYPE)
  *     cdef double[:] distances_view = distances             # <<<<<<<<<<<<<<
@@ -19253,7 +19253,7 @@ static PyObject *__pyx_pf_6knn_cy_6k_nn_v3(CYTHON_UNUSED PyObject *__pyx_self, _
   __pyx_t_5.memview = NULL;
   __pyx_t_5.data = NULL;
 
-  /* "knn_cy.pyx":82
+  /* "knn_cy/knn_cy.pyx":82
  *     cdef double[:] distances_view = distances
  * 
  *     for i in range(n):             # <<<<<<<<<<<<<<
@@ -19265,7 +19265,7 @@ static PyObject *__pyx_pf_6knn_cy_6k_nn_v3(CYTHON_UNUSED PyObject *__pyx_self, _
   for (__pyx_t_8 = 0; __pyx_t_8 < __pyx_t_7; __pyx_t_8+=1) {
     __pyx_v_i = __pyx_t_8;
 
-    /* "knn_cy.pyx":83
+    /* "knn_cy/knn_cy.pyx":83
  * 
  *     for i in range(n):
  *         somme = 0.0             # <<<<<<<<<<<<<<
@@ -19274,7 +19274,7 @@ static PyObject *__pyx_pf_6knn_cy_6k_nn_v3(CYTHON_UNUSED PyObject *__pyx_self, _
  */
     __pyx_v_somme = 0.0;
 
-    /* "knn_cy.pyx":84
+    /* "knn_cy/knn_cy.pyx":84
  *     for i in range(n):
  *         somme = 0.0
  *         for j in range(d):             # <<<<<<<<<<<<<<
@@ -19286,7 +19286,7 @@ static PyObject *__pyx_pf_6knn_cy_6k_nn_v3(CYTHON_UNUSED PyObject *__pyx_self, _
     for (__pyx_t_11 = 0; __pyx_t_11 < __pyx_t_10; __pyx_t_11+=1) {
       __pyx_v_j = __pyx_t_11;
 
-      /* "knn_cy.pyx":85
+      /* "knn_cy/knn_cy.pyx":85
  *         somme = 0.0
  *         for j in range(d):
  *             diff = x_train[i, j] - x[j]             # <<<<<<<<<<<<<<
@@ -19298,7 +19298,7 @@ static PyObject *__pyx_pf_6knn_cy_6k_nn_v3(CYTHON_UNUSED PyObject *__pyx_self, _
       __pyx_t_14 = __pyx_v_j;
       __pyx_v_diff = ((*((double *) ( /* dim=1 */ (( /* dim=0 */ (__pyx_v_x_train.data + __pyx_t_12 * __pyx_v_x_train.strides[0]) ) + __pyx_t_13 * __pyx_v_x_train.strides[1]) ))) - (*((double *) ( /* dim=0 */ (__pyx_v_x.data + __pyx_t_14 * __pyx_v_x.strides[0]) ))));
 
-      /* "knn_cy.pyx":86
+      /* "knn_cy/knn_cy.pyx":86
  *         for j in range(d):
  *             diff = x_train[i, j] - x[j]
  *             somme += diff * diff             # <<<<<<<<<<<<<<
@@ -19308,7 +19308,7 @@ static PyObject *__pyx_pf_6knn_cy_6k_nn_v3(CYTHON_UNUSED PyObject *__pyx_self, _
       __pyx_v_somme = (__pyx_v_somme + (__pyx_v_diff * __pyx_v_diff));
     }
 
-    /* "knn_cy.pyx":87
+    /* "knn_cy/knn_cy.pyx":87
  *             diff = x_train[i, j] - x[j]
  *             somme += diff * diff
  *         distances_view[i] = sqrt(somme)             # <<<<<<<<<<<<<<
@@ -19319,7 +19319,7 @@ static PyObject *__pyx_pf_6knn_cy_6k_nn_v3(CYTHON_UNUSED PyObject *__pyx_self, _
     *((double *) ( /* dim=0 */ (__pyx_v_distances_view.data + __pyx_t_14 * __pyx_v_distances_view.strides[0]) )) = sqrt(__pyx_v_somme);
   }
 
-  /* "knn_cy.pyx":89
+  /* "knn_cy/knn_cy.pyx":89
  *         distances_view[i] = sqrt(somme)
  * 
  *     indices_distances = bottleneck.argpartition(distances, kth=k-1)             # <<<<<<<<<<<<<<
@@ -19350,7 +19350,7 @@ static PyObject *__pyx_pf_6knn_cy_6k_nn_v3(CYTHON_UNUSED PyObject *__pyx_self, _
   __pyx_v_indices_distances = __pyx_t_2;
   __pyx_t_2 = 0;
 
-  /* "knn_cy.pyx":90
+  /* "knn_cy/knn_cy.pyx":90
  * 
  *     indices_distances = bottleneck.argpartition(distances, kth=k-1)
  *     indices_k_nn = indices_distances[:k]             # <<<<<<<<<<<<<<
@@ -19362,7 +19362,7 @@ static PyObject *__pyx_pf_6knn_cy_6k_nn_v3(CYTHON_UNUSED PyObject *__pyx_self, _
   __pyx_v_indices_k_nn = __pyx_t_2;
   __pyx_t_2 = 0;
 
-  /* "knn_cy.pyx":91
+  /* "knn_cy/knn_cy.pyx":91
  *     indices_distances = bottleneck.argpartition(distances, kth=k-1)
  *     indices_k_nn = indices_distances[:k]
  *     counts = np.bincount(class_train[indices_k_nn].astype(int))             # <<<<<<<<<<<<<<
@@ -19427,7 +19427,7 @@ static PyObject *__pyx_pf_6knn_cy_6k_nn_v3(CYTHON_UNUSED PyObject *__pyx_self, _
   __pyx_v_counts = __pyx_t_2;
   __pyx_t_2 = 0;
 
-  /* "knn_cy.pyx":92
+  /* "knn_cy/knn_cy.pyx":92
  *     indices_k_nn = indices_distances[:k]
  *     counts = np.bincount(class_train[indices_k_nn].astype(int))
  *     return np.argmax(counts)             # <<<<<<<<<<<<<<
@@ -19466,7 +19466,7 @@ static PyObject *__pyx_pf_6knn_cy_6k_nn_v3(CYTHON_UNUSED PyObject *__pyx_self, _
   __pyx_t_2 = 0;
   goto __pyx_L0;
 
-  /* "knn_cy.pyx":71
+  /* "knn_cy/knn_cy.pyx":71
  * 
  * #  Version finale : comme indiqu, on dsactive les scurits par dfaut Cython pour gagner du temps :
  * @cython.boundscheck(False)             # <<<<<<<<<<<<<<
@@ -19482,7 +19482,7 @@ static PyObject *__pyx_pf_6knn_cy_6k_nn_v3(CYTHON_UNUSED PyObject *__pyx_self, _
   __Pyx_XDECREF(__pyx_t_4);
   __PYX_XCLEAR_MEMVIEW(&__pyx_t_5, 1);
   __Pyx_XDECREF(__pyx_t_15);
-  __Pyx_AddTraceback("knn_cy.k_nn_v3", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("knn_cy.knn_cy.k_nn_v3", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_distances);
@@ -19495,7 +19495,7 @@ static PyObject *__pyx_pf_6knn_cy_6k_nn_v3(CYTHON_UNUSED PyObject *__pyx_self, _
   return __pyx_r;
 }
 
-/* "knn_cy.pyx":96
+/* "knn_cy/knn_cy.pyx":96
  * 
  * # Comme conseill dans le tutoriel, on dclare le tableau Numpy comme contingu pour avoir des gains supplmentaires
  * @cython.boundscheck(False)             # <<<<<<<<<<<<<<
@@ -19504,15 +19504,15 @@ static PyObject *__pyx_pf_6knn_cy_6k_nn_v3(CYTHON_UNUSED PyObject *__pyx_self, _
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6knn_cy_9k_nn_v4(PyObject *__pyx_self, 
+static PyObject *__pyx_pw_6knn_cy_6knn_cy_9k_nn_v4(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-static PyMethodDef __pyx_mdef_6knn_cy_9k_nn_v4 = {"k_nn_v4", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_6knn_cy_9k_nn_v4, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_6knn_cy_9k_nn_v4(PyObject *__pyx_self, 
+static PyMethodDef __pyx_mdef_6knn_cy_6knn_cy_9k_nn_v4 = {"k_nn_v4", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_6knn_cy_6knn_cy_9k_nn_v4, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_6knn_cy_6knn_cy_9k_nn_v4(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
@@ -19629,11 +19629,11 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   }
   __PYX_XCLEAR_MEMVIEW(&__pyx_v_x, 1);
   __PYX_XCLEAR_MEMVIEW(&__pyx_v_x_train, 1);
-  __Pyx_AddTraceback("knn_cy.k_nn_v4", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("knn_cy.knn_cy.k_nn_v4", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_6knn_cy_8k_nn_v4(__pyx_self, __pyx_v_x, __pyx_v_x_train, __pyx_v_class_train, __pyx_v_k);
+  __pyx_r = __pyx_pf_6knn_cy_6knn_cy_8k_nn_v4(__pyx_self, __pyx_v_x, __pyx_v_x_train, __pyx_v_class_train, __pyx_v_k);
 
   /* function exit code */
   __PYX_XCLEAR_MEMVIEW(&__pyx_v_x, 1);
@@ -19648,7 +19648,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_6knn_cy_8k_nn_v4(CYTHON_UNUSED PyObject *__pyx_self, __Pyx_memviewslice __pyx_v_x, __Pyx_memviewslice __pyx_v_x_train, PyObject *__pyx_v_class_train, int __pyx_v_k) {
+static PyObject *__pyx_pf_6knn_cy_6knn_cy_8k_nn_v4(CYTHON_UNUSED PyObject *__pyx_self, __Pyx_memviewslice __pyx_v_x, __Pyx_memviewslice __pyx_v_x_train, PyObject *__pyx_v_class_train, int __pyx_v_k) {
   Py_ssize_t __pyx_v_n;
   Py_ssize_t __pyx_v_d;
   Py_ssize_t __pyx_v_i;
@@ -19683,7 +19683,7 @@ static PyObject *__pyx_pf_6knn_cy_8k_nn_v4(CYTHON_UNUSED PyObject *__pyx_self, _
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("k_nn_v4", 1);
 
-  /* "knn_cy.pyx":99
+  /* "knn_cy/knn_cy.pyx":99
  * @cython.wraparound(False)
  * def k_nn_v4(double[::1] x, double[:, ::1] x_train, class_train, int k):
  *     cdef Py_ssize_t n = x_train.shape[0]             # <<<<<<<<<<<<<<
@@ -19692,7 +19692,7 @@ static PyObject *__pyx_pf_6knn_cy_8k_nn_v4(CYTHON_UNUSED PyObject *__pyx_self, _
  */
   __pyx_v_n = (__pyx_v_x_train.shape[0]);
 
-  /* "knn_cy.pyx":100
+  /* "knn_cy/knn_cy.pyx":100
  * def k_nn_v4(double[::1] x, double[:, ::1] x_train, class_train, int k):
  *     cdef Py_ssize_t n = x_train.shape[0]
  *     cdef Py_ssize_t d = x_train.shape[1]             # <<<<<<<<<<<<<<
@@ -19701,7 +19701,7 @@ static PyObject *__pyx_pf_6knn_cy_8k_nn_v4(CYTHON_UNUSED PyObject *__pyx_self, _
  */
   __pyx_v_d = (__pyx_v_x_train.shape[1]);
 
-  /* "knn_cy.pyx":104
+  /* "knn_cy/knn_cy.pyx":104
  *     cdef double diff, somme
  * 
  *     distances = np.zeros(n, dtype=DTYPE)             # <<<<<<<<<<<<<<
@@ -19734,7 +19734,7 @@ static PyObject *__pyx_pf_6knn_cy_8k_nn_v4(CYTHON_UNUSED PyObject *__pyx_self, _
   __pyx_v_distances = __pyx_t_4;
   __pyx_t_4 = 0;
 
-  /* "knn_cy.pyx":105
+  /* "knn_cy/knn_cy.pyx":105
  * 
  *     distances = np.zeros(n, dtype=DTYPE)
  *     cdef double[::1] distances_view = distances             # <<<<<<<<<<<<<<
@@ -19746,7 +19746,7 @@ static PyObject *__pyx_pf_6knn_cy_8k_nn_v4(CYTHON_UNUSED PyObject *__pyx_self, _
   __pyx_t_5.memview = NULL;
   __pyx_t_5.data = NULL;
 
-  /* "knn_cy.pyx":107
+  /* "knn_cy/knn_cy.pyx":107
  *     cdef double[::1] distances_view = distances
  * 
  *     for i in range(n):             # <<<<<<<<<<<<<<
@@ -19758,7 +19758,7 @@ static PyObject *__pyx_pf_6knn_cy_8k_nn_v4(CYTHON_UNUSED PyObject *__pyx_self, _
   for (__pyx_t_8 = 0; __pyx_t_8 < __pyx_t_7; __pyx_t_8+=1) {
     __pyx_v_i = __pyx_t_8;
 
-    /* "knn_cy.pyx":108
+    /* "knn_cy/knn_cy.pyx":108
  * 
  *     for i in range(n):
  *         somme = 0.0             # <<<<<<<<<<<<<<
@@ -19767,7 +19767,7 @@ static PyObject *__pyx_pf_6knn_cy_8k_nn_v4(CYTHON_UNUSED PyObject *__pyx_self, _
  */
     __pyx_v_somme = 0.0;
 
-    /* "knn_cy.pyx":109
+    /* "knn_cy/knn_cy.pyx":109
  *     for i in range(n):
  *         somme = 0.0
  *         for j in range(d):             # <<<<<<<<<<<<<<
@@ -19779,7 +19779,7 @@ static PyObject *__pyx_pf_6knn_cy_8k_nn_v4(CYTHON_UNUSED PyObject *__pyx_self, _
     for (__pyx_t_11 = 0; __pyx_t_11 < __pyx_t_10; __pyx_t_11+=1) {
       __pyx_v_j = __pyx_t_11;
 
-      /* "knn_cy.pyx":110
+      /* "knn_cy/knn_cy.pyx":110
  *         somme = 0.0
  *         for j in range(d):
  *             diff = x_train[i, j] - x[j]             # <<<<<<<<<<<<<<
@@ -19791,7 +19791,7 @@ static PyObject *__pyx_pf_6knn_cy_8k_nn_v4(CYTHON_UNUSED PyObject *__pyx_self, _
       __pyx_t_14 = __pyx_v_j;
       __pyx_v_diff = ((*((double *) ( /* dim=1 */ ((char *) (((double *) ( /* dim=0 */ (__pyx_v_x_train.data + __pyx_t_12 * __pyx_v_x_train.strides[0]) )) + __pyx_t_13)) ))) - (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_x.data) + __pyx_t_14)) ))));
 
-      /* "knn_cy.pyx":111
+      /* "knn_cy/knn_cy.pyx":111
  *         for j in range(d):
  *             diff = x_train[i, j] - x[j]
  *             somme += diff * diff             # <<<<<<<<<<<<<<
@@ -19801,7 +19801,7 @@ static PyObject *__pyx_pf_6knn_cy_8k_nn_v4(CYTHON_UNUSED PyObject *__pyx_self, _
       __pyx_v_somme = (__pyx_v_somme + (__pyx_v_diff * __pyx_v_diff));
     }
 
-    /* "knn_cy.pyx":112
+    /* "knn_cy/knn_cy.pyx":112
  *             diff = x_train[i, j] - x[j]
  *             somme += diff * diff
  *         distances_view[i] = sqrt(somme)             # <<<<<<<<<<<<<<
@@ -19812,7 +19812,7 @@ static PyObject *__pyx_pf_6knn_cy_8k_nn_v4(CYTHON_UNUSED PyObject *__pyx_self, _
     *((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_distances_view.data) + __pyx_t_14)) )) = sqrt(__pyx_v_somme);
   }
 
-  /* "knn_cy.pyx":114
+  /* "knn_cy/knn_cy.pyx":114
  *         distances_view[i] = sqrt(somme)
  * 
  *     indices_distances = bottleneck.argpartition(distances, kth=k-1)             # <<<<<<<<<<<<<<
@@ -19843,7 +19843,7 @@ static PyObject *__pyx_pf_6knn_cy_8k_nn_v4(CYTHON_UNUSED PyObject *__pyx_self, _
   __pyx_v_indices_distances = __pyx_t_2;
   __pyx_t_2 = 0;
 
-  /* "knn_cy.pyx":115
+  /* "knn_cy/knn_cy.pyx":115
  * 
  *     indices_distances = bottleneck.argpartition(distances, kth=k-1)
  *     indices_k_nn = indices_distances[:k]             # <<<<<<<<<<<<<<
@@ -19855,7 +19855,7 @@ static PyObject *__pyx_pf_6knn_cy_8k_nn_v4(CYTHON_UNUSED PyObject *__pyx_self, _
   __pyx_v_indices_k_nn = __pyx_t_2;
   __pyx_t_2 = 0;
 
-  /* "knn_cy.pyx":116
+  /* "knn_cy/knn_cy.pyx":116
  *     indices_distances = bottleneck.argpartition(distances, kth=k-1)
  *     indices_k_nn = indices_distances[:k]
  *     counts = np.bincount(class_train[indices_k_nn].astype(int))             # <<<<<<<<<<<<<<
@@ -19919,7 +19919,7 @@ static PyObject *__pyx_pf_6knn_cy_8k_nn_v4(CYTHON_UNUSED PyObject *__pyx_self, _
   __pyx_v_counts = __pyx_t_2;
   __pyx_t_2 = 0;
 
-  /* "knn_cy.pyx":117
+  /* "knn_cy/knn_cy.pyx":117
  *     indices_k_nn = indices_distances[:k]
  *     counts = np.bincount(class_train[indices_k_nn].astype(int))
  *     return np.argmax(counts)             # <<<<<<<<<<<<<<
@@ -19956,7 +19956,7 @@ static PyObject *__pyx_pf_6knn_cy_8k_nn_v4(CYTHON_UNUSED PyObject *__pyx_self, _
   __pyx_t_2 = 0;
   goto __pyx_L0;
 
-  /* "knn_cy.pyx":96
+  /* "knn_cy/knn_cy.pyx":96
  * 
  * # Comme conseill dans le tutoriel, on dclare le tableau Numpy comme contingu pour avoir des gains supplmentaires
  * @cython.boundscheck(False)             # <<<<<<<<<<<<<<
@@ -19972,7 +19972,7 @@ static PyObject *__pyx_pf_6knn_cy_8k_nn_v4(CYTHON_UNUSED PyObject *__pyx_self, _
   __Pyx_XDECREF(__pyx_t_4);
   __PYX_XCLEAR_MEMVIEW(&__pyx_t_5, 1);
   __Pyx_XDECREF(__pyx_t_15);
-  __Pyx_AddTraceback("knn_cy.k_nn_v4", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("knn_cy.knn_cy.k_nn_v4", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_distances);
@@ -20122,7 +20122,7 @@ static PyType_Slot __pyx_type___pyx_array_slots[] = {
   {0, 0},
 };
 static PyType_Spec __pyx_type___pyx_array_spec = {
-  "knn_cy.array",
+  "knn_cy.knn_cy.array",
   sizeof(struct __pyx_array_obj),
   0,
   Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_VERSION_TAG|Py_TPFLAGS_CHECKTYPES|Py_TPFLAGS_HAVE_NEWBUFFER|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_SEQUENCE,
@@ -20168,7 +20168,7 @@ static PyBufferProcs __pyx_tp_as_buffer_array = {
 
 static PyTypeObject __pyx_type___pyx_array = {
   PyVarObject_HEAD_INIT(0, 0)
-  "knn_cy.""array", /*tp_name*/
+  "knn_cy.knn_cy.""array", /*tp_name*/
   sizeof(struct __pyx_array_obj), /*tp_basicsize*/
   0, /*tp_itemsize*/
   __pyx_tp_dealloc_array, /*tp_dealloc*/
@@ -20331,7 +20331,7 @@ static PyType_Slot __pyx_type___pyx_MemviewEnum_slots[] = {
   {0, 0},
 };
 static PyType_Spec __pyx_type___pyx_MemviewEnum_spec = {
-  "knn_cy.Enum",
+  "knn_cy.knn_cy.Enum",
   sizeof(struct __pyx_MemviewEnum_obj),
   0,
   Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_VERSION_TAG|Py_TPFLAGS_CHECKTYPES|Py_TPFLAGS_HAVE_NEWBUFFER|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC,
@@ -20341,7 +20341,7 @@ static PyType_Spec __pyx_type___pyx_MemviewEnum_spec = {
 
 static PyTypeObject __pyx_type___pyx_MemviewEnum = {
   PyVarObject_HEAD_INIT(0, 0)
-  "knn_cy.""Enum", /*tp_name*/
+  "knn_cy.knn_cy.""Enum", /*tp_name*/
   sizeof(struct __pyx_MemviewEnum_obj), /*tp_basicsize*/
   0, /*tp_itemsize*/
   __pyx_tp_dealloc_Enum, /*tp_dealloc*/
@@ -20641,7 +20641,7 @@ static PyType_Slot __pyx_type___pyx_memoryview_slots[] = {
   {0, 0},
 };
 static PyType_Spec __pyx_type___pyx_memoryview_spec = {
-  "knn_cy.memoryview",
+  "knn_cy.knn_cy.memoryview",
   sizeof(struct __pyx_memoryview_obj),
   0,
   Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_VERSION_TAG|Py_TPFLAGS_CHECKTYPES|Py_TPFLAGS_HAVE_NEWBUFFER|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC,
@@ -20687,7 +20687,7 @@ static PyBufferProcs __pyx_tp_as_buffer_memoryview = {
 
 static PyTypeObject __pyx_type___pyx_memoryview = {
   PyVarObject_HEAD_INIT(0, 0)
-  "knn_cy.""memoryview", /*tp_name*/
+  "knn_cy.knn_cy.""memoryview", /*tp_name*/
   sizeof(struct __pyx_memoryview_obj), /*tp_basicsize*/
   0, /*tp_itemsize*/
   __pyx_tp_dealloc_memoryview, /*tp_dealloc*/
@@ -20842,7 +20842,7 @@ static PyType_Slot __pyx_type___pyx_memoryviewslice_slots[] = {
   {0, 0},
 };
 static PyType_Spec __pyx_type___pyx_memoryviewslice_spec = {
-  "knn_cy._memoryviewslice",
+  "knn_cy.knn_cy._memoryviewslice",
   sizeof(struct __pyx_memoryviewslice_obj),
   0,
   Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_VERSION_TAG|Py_TPFLAGS_CHECKTYPES|Py_TPFLAGS_HAVE_NEWBUFFER|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_SEQUENCE,
@@ -20852,7 +20852,7 @@ static PyType_Spec __pyx_type___pyx_memoryviewslice_spec = {
 
 static PyTypeObject __pyx_type___pyx_memoryviewslice = {
   PyVarObject_HEAD_INIT(0, 0)
-  "knn_cy.""_memoryviewslice", /*tp_name*/
+  "knn_cy.knn_cy.""_memoryviewslice", /*tp_name*/
   sizeof(struct __pyx_memoryviewslice_obj), /*tp_basicsize*/
   0, /*tp_itemsize*/
   __pyx_tp_dealloc__memoryviewslice, /*tp_dealloc*/
@@ -21058,7 +21058,7 @@ static int __Pyx_CreateStringTabAndInitStrings(void) {
     {&__pyx_n_s_k_nn_v2, __pyx_k_k_nn_v2, sizeof(__pyx_k_k_nn_v2), 0, 0, 1, 1},
     {&__pyx_n_s_k_nn_v3, __pyx_k_k_nn_v3, sizeof(__pyx_k_k_nn_v3), 0, 0, 1, 1},
     {&__pyx_n_s_k_nn_v4, __pyx_k_k_nn_v4, sizeof(__pyx_k_k_nn_v4), 0, 0, 1, 1},
-    {&__pyx_n_s_knn_cy, __pyx_k_knn_cy, sizeof(__pyx_k_knn_cy), 0, 0, 1, 1},
+    {&__pyx_n_s_knn_cy_knn_cy, __pyx_k_knn_cy_knn_cy, sizeof(__pyx_k_knn_cy_knn_cy), 0, 0, 1, 1},
     {&__pyx_kp_s_knn_cy_pyx, __pyx_k_knn_cy_pyx, sizeof(__pyx_k_knn_cy_pyx), 0, 0, 1, 0},
     {&__pyx_n_s_kth, __pyx_k_kth, sizeof(__pyx_k_kth), 0, 0, 1, 1},
     {&__pyx_n_s_linalg, __pyx_k_linalg, sizeof(__pyx_k_linalg), 0, 0, 1, 1},
@@ -21276,7 +21276,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__18);
   __pyx_codeobj__19 = (PyObject*)__Pyx_PyCode_New(3, 0, 0, 5, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__18, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_stringsource, __pyx_n_s_pyx_unpickle_Enum, 1, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__19)) __PYX_ERR(1, 1, __pyx_L1_error)
 
-  /* "knn_cy.pyx":12
+  /* "knn_cy/knn_cy.pyx":12
  * 
  * # Fonction knn telle quelle pour comparer
  * def k_nn_v0(x, x_train, class_train, k):             # <<<<<<<<<<<<<<
@@ -21288,7 +21288,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__20);
   __pyx_codeobj__21 = (PyObject*)__Pyx_PyCode_New(4, 0, 0, 8, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__20, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_knn_cy_pyx, __pyx_n_s_k_nn_v0, 12, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__21)) __PYX_ERR(0, 12, __pyx_L1_error)
 
-  /* "knn_cy.pyx":21
+  /* "knn_cy/knn_cy.pyx":21
  * 
  * # Comme conseill et constat, la fonction np.linalg.norm consomme beaucoup donc on l'amliore en la dcoupant en boucle et en ajoutant les types cython, x et x_train restent des objets numpy pour l'instant
  * def k_nn_v1(x, x_train, class_train, int k):             # <<<<<<<<<<<<<<
@@ -21300,7 +21300,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__22);
   __pyx_codeobj__23 = (PyObject*)__Pyx_PyCode_New(4, 0, 0, 14, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__22, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_knn_cy_pyx, __pyx_n_s_k_nn_v1, 21, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__23)) __PYX_ERR(0, 21, __pyx_L1_error)
 
-  /* "knn_cy.pyx":47
+  /* "knn_cy/knn_cy.pyx":47
  * 
  * # On remplace les tableaux numpy en memoryview pour optimiser
  * def k_nn_v2(double[:] x, double[:, :] x_train, class_train, int k):             # <<<<<<<<<<<<<<
@@ -21312,7 +21312,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__24);
   __pyx_codeobj__25 = (PyObject*)__Pyx_PyCode_New(4, 0, 0, 15, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__24, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_knn_cy_pyx, __pyx_n_s_k_nn_v2, 47, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__25)) __PYX_ERR(0, 47, __pyx_L1_error)
 
-  /* "knn_cy.pyx":71
+  /* "knn_cy/knn_cy.pyx":71
  * 
  * #  Version finale : comme indiqu, on dsactive les scurits par dfaut Cython pour gagner du temps :
  * @cython.boundscheck(False)             # <<<<<<<<<<<<<<
@@ -21321,7 +21321,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  */
   __pyx_codeobj__26 = (PyObject*)__Pyx_PyCode_New(4, 0, 0, 15, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__24, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_knn_cy_pyx, __pyx_n_s_k_nn_v3, 71, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__26)) __PYX_ERR(0, 71, __pyx_L1_error)
 
-  /* "knn_cy.pyx":96
+  /* "knn_cy/knn_cy.pyx":96
  * 
  * # Comme conseill dans le tutoriel, on dclare le tableau Numpy comme contingu pour avoir des gains supplmentaires
  * @cython.boundscheck(False)             # <<<<<<<<<<<<<<
@@ -21838,14 +21838,14 @@ if (!__Pyx_RefNanny) {
   #if PY_MAJOR_VERSION < 3 && (__PYX_DEFAULT_STRING_ENCODING_IS_ASCII || __PYX_DEFAULT_STRING_ENCODING_IS_DEFAULT)
   if (__Pyx_init_sys_getdefaultencoding_params() < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   #endif
-  if (__pyx_module_is_main_knn_cy) {
+  if (__pyx_module_is_main_knn_cy__knn_cy) {
     if (PyObject_SetAttr(__pyx_m, __pyx_n_s_name_2, __pyx_n_s_main) < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   }
   #if PY_MAJOR_VERSION >= 3
   {
     PyObject *modules = PyImport_GetModuleDict(); if (unlikely(!modules)) __PYX_ERR(0, 1, __pyx_L1_error)
-    if (!PyDict_GetItemString(modules, "knn_cy")) {
-      if (unlikely((PyDict_SetItemString(modules, "knn_cy", __pyx_m) < 0))) __PYX_ERR(0, 1, __pyx_L1_error)
+    if (!PyDict_GetItemString(modules, "knn_cy.knn_cy")) {
+      if (unlikely((PyDict_SetItemString(modules, "knn_cy.knn_cy", __pyx_m) < 0))) __PYX_ERR(0, 1, __pyx_L1_error)
     }
   }
   #endif
@@ -22379,7 +22379,7 @@ if (!__Pyx_RefNanny) {
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_pyx_unpickle_Enum, __pyx_t_7) < 0) __PYX_ERR(1, 1, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
-  /* "knn_cy.pyx":1
+  /* "knn_cy/knn_cy.pyx":1
  * import numpy as np             # <<<<<<<<<<<<<<
  * cimport cython
  * import bottleneck
@@ -22389,7 +22389,7 @@ if (!__Pyx_RefNanny) {
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_np, __pyx_t_7) < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
-  /* "knn_cy.pyx":3
+  /* "knn_cy/knn_cy.pyx":3
  * import numpy as np
  * cimport cython
  * import bottleneck             # <<<<<<<<<<<<<<
@@ -22401,7 +22401,7 @@ if (!__Pyx_RefNanny) {
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_bottleneck, __pyx_t_7) < 0) __PYX_ERR(0, 3, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
-  /* "knn_cy.pyx":8
+  /* "knn_cy/knn_cy.pyx":8
  * # STEP-BY-STEP OPTIMIZATION
  * 
  * DTYPE = np.float64             # <<<<<<<<<<<<<<
@@ -22416,67 +22416,67 @@ if (!__Pyx_RefNanny) {
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_DTYPE, __pyx_t_4) < 0) __PYX_ERR(0, 8, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "knn_cy.pyx":12
+  /* "knn_cy/knn_cy.pyx":12
  * 
  * # Fonction knn telle quelle pour comparer
  * def k_nn_v0(x, x_train, class_train, k):             # <<<<<<<<<<<<<<
  *     distances = np.linalg.norm(x_train - x, axis=1)
  *     indices_distances = bottleneck.argpartition(distances, kth=k-1)
  */
-  __pyx_t_4 = __Pyx_CyFunction_New(&__pyx_mdef_6knn_cy_1k_nn_v0, 0, __pyx_n_s_k_nn_v0, NULL, __pyx_n_s_knn_cy, __pyx_d, ((PyObject *)__pyx_codeobj__21)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 12, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_CyFunction_New(&__pyx_mdef_6knn_cy_6knn_cy_1k_nn_v0, 0, __pyx_n_s_k_nn_v0, NULL, __pyx_n_s_knn_cy_knn_cy, __pyx_d, ((PyObject *)__pyx_codeobj__21)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 12, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_k_nn_v0, __pyx_t_4) < 0) __PYX_ERR(0, 12, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "knn_cy.pyx":21
+  /* "knn_cy/knn_cy.pyx":21
  * 
  * # Comme conseill et constat, la fonction np.linalg.norm consomme beaucoup donc on l'amliore en la dcoupant en boucle et en ajoutant les types cython, x et x_train restent des objets numpy pour l'instant
  * def k_nn_v1(x, x_train, class_train, int k):             # <<<<<<<<<<<<<<
  *     assert x.dtype == DTYPE
  *     assert x_train.dtype == DTYPE
  */
-  __pyx_t_4 = __Pyx_CyFunction_New(&__pyx_mdef_6knn_cy_3k_nn_v1, 0, __pyx_n_s_k_nn_v1, NULL, __pyx_n_s_knn_cy, __pyx_d, ((PyObject *)__pyx_codeobj__23)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 21, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_CyFunction_New(&__pyx_mdef_6knn_cy_6knn_cy_3k_nn_v1, 0, __pyx_n_s_k_nn_v1, NULL, __pyx_n_s_knn_cy_knn_cy, __pyx_d, ((PyObject *)__pyx_codeobj__23)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 21, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_k_nn_v1, __pyx_t_4) < 0) __PYX_ERR(0, 21, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "knn_cy.pyx":47
+  /* "knn_cy/knn_cy.pyx":47
  * 
  * # On remplace les tableaux numpy en memoryview pour optimiser
  * def k_nn_v2(double[:] x, double[:, :] x_train, class_train, int k):             # <<<<<<<<<<<<<<
  *     cdef Py_ssize_t n = x_train.shape[0]
  *     cdef Py_ssize_t d = x_train.shape[1]
  */
-  __pyx_t_4 = __Pyx_CyFunction_New(&__pyx_mdef_6knn_cy_5k_nn_v2, 0, __pyx_n_s_k_nn_v2, NULL, __pyx_n_s_knn_cy, __pyx_d, ((PyObject *)__pyx_codeobj__25)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 47, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_CyFunction_New(&__pyx_mdef_6knn_cy_6knn_cy_5k_nn_v2, 0, __pyx_n_s_k_nn_v2, NULL, __pyx_n_s_knn_cy_knn_cy, __pyx_d, ((PyObject *)__pyx_codeobj__25)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 47, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_k_nn_v2, __pyx_t_4) < 0) __PYX_ERR(0, 47, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "knn_cy.pyx":71
+  /* "knn_cy/knn_cy.pyx":71
  * 
  * #  Version finale : comme indiqu, on dsactive les scurits par dfaut Cython pour gagner du temps :
  * @cython.boundscheck(False)             # <<<<<<<<<<<<<<
  * @cython.wraparound(False)
  * def k_nn_v3(double[:] x, double[:, :] x_train, class_train, int k):
  */
-  __pyx_t_4 = __Pyx_CyFunction_New(&__pyx_mdef_6knn_cy_7k_nn_v3, 0, __pyx_n_s_k_nn_v3, NULL, __pyx_n_s_knn_cy, __pyx_d, ((PyObject *)__pyx_codeobj__26)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 71, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_CyFunction_New(&__pyx_mdef_6knn_cy_6knn_cy_7k_nn_v3, 0, __pyx_n_s_k_nn_v3, NULL, __pyx_n_s_knn_cy_knn_cy, __pyx_d, ((PyObject *)__pyx_codeobj__26)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 71, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_k_nn_v3, __pyx_t_4) < 0) __PYX_ERR(0, 71, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "knn_cy.pyx":96
+  /* "knn_cy/knn_cy.pyx":96
  * 
  * # Comme conseill dans le tutoriel, on dclare le tableau Numpy comme contingu pour avoir des gains supplmentaires
  * @cython.boundscheck(False)             # <<<<<<<<<<<<<<
  * @cython.wraparound(False)
  * def k_nn_v4(double[::1] x, double[:, ::1] x_train, class_train, int k):
  */
-  __pyx_t_4 = __Pyx_CyFunction_New(&__pyx_mdef_6knn_cy_9k_nn_v4, 0, __pyx_n_s_k_nn_v4, NULL, __pyx_n_s_knn_cy, __pyx_d, ((PyObject *)__pyx_codeobj__27)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 96, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_CyFunction_New(&__pyx_mdef_6knn_cy_6knn_cy_9k_nn_v4, 0, __pyx_n_s_k_nn_v4, NULL, __pyx_n_s_knn_cy_knn_cy, __pyx_d, ((PyObject *)__pyx_codeobj__27)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 96, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_k_nn_v4, __pyx_t_4) < 0) __PYX_ERR(0, 96, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "knn_cy.pyx":1
+  /* "knn_cy/knn_cy.pyx":1
  * import numpy as np             # <<<<<<<<<<<<<<
  * cimport cython
  * import bottleneck
@@ -22495,7 +22495,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_XDECREF(__pyx_t_7);
   if (__pyx_m) {
     if (__pyx_d && stringtab_initialized) {
-      __Pyx_AddTraceback("init knn_cy", __pyx_clineno, __pyx_lineno, __pyx_filename);
+      __Pyx_AddTraceback("init knn_cy.knn_cy", __pyx_clineno, __pyx_lineno, __pyx_filename);
     }
     #if !CYTHON_USE_MODULE_STATE
     Py_CLEAR(__pyx_m);
@@ -22509,7 +22509,7 @@ if (!__Pyx_RefNanny) {
     }
     #endif
   } else if (!PyErr_Occurred()) {
-    PyErr_SetString(PyExc_ImportError, "init knn_cy");
+    PyErr_SetString(PyExc_ImportError, "init knn_cy.knn_cy");
   }
   __pyx_L0:;
   __Pyx_RefNannyFinishContext();
