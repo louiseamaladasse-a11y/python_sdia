@@ -67,7 +67,7 @@ def k_nn_v2(double[:] x, double[:, :] x_train, class_train, int k):
     return np.argmax(counts)
 
 
-#  Version finale : comme indiqué, on désactive les sécurités par défaut Cython pour gagner du temps :
+#  Comme indiqué, on désactive les sécurités par défaut Cython pour gagner du temps :
 @cython.boundscheck(False)
 @cython.wraparound(False)
 def k_nn_v3(double[:] x, double[:, :] x_train, class_train, int k):
@@ -92,7 +92,7 @@ def k_nn_v3(double[:] x, double[:, :] x_train, class_train, int k):
     return np.argmax(counts)
 
 
-# Comme conseillé dans le tutoriel, on déclare le tableau Numpy comme contingu pour avoir des gains supplémentaires
+# Version finale : Comme conseillé dans le tutoriel, on déclare le tableau Numpy comme contingu pour avoir des gains supplémentaires
 @cython.boundscheck(False)
 @cython.wraparound(False)
 def k_nn_v4(double[::1] x, double[:, ::1] x_train, class_train, int k):
